@@ -516,3 +516,27 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
 .article-card h2 a:hover{
   color: var(--rose);
 }
+.product-price{
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:38px;
+  line-height:1;
+  margin:24px 0 0;
+  color:var(--rose);
+}
+
+.clean-features .feature-item:before{
+  display:none;
+}
+
+.clean-features .feature-item{
+  display:block;
+  padding:12px 6px;
+}
+
+.clean-features .feature-item span{
+  font-size:15px;
+}
+
+.clean-features .feature-item small{
+  margin-top:6px;
+}
