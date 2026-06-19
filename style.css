@@ -442,3 +442,77 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
 .article-card img {
   margin-bottom: 0;
 }
+/* ARTICLE CARDS — refined covers */
+.articles-grid{
+  gap: 68px 40px;
+}
+
+.article-cover{
+  aspect-ratio: 1.52 / 1 !important;
+  background: #eef4f5;
+}
+
+.article-cover-label{
+  width: 76%;
+  min-height: auto;
+  padding: 24px 26px 26px;
+  background: rgba(255,253,248,.88);
+  box-shadow: 0 10px 26px rgba(53,45,36,.055);
+}
+
+.article-cover-label span{
+  margin-bottom: 12px;
+  color: var(--blue-light);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .22em;
+}
+
+.article-cover-label strong{
+  max-width: 92%;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -.01em;
+}
+
+.article-meta{
+  margin-top: 22px;
+  margin-bottom: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .2em;
+}
+
+.article-card h2{
+  font-size: 28px;
+  line-height: 1.08;
+  margin-bottom: 16px;
+}
+
+.article-card p{
+  font-size: 16px;
+  line-height: 1.65;
+  max-width: 92%;
+}
+
+.article-card > a:last-child{
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--blue-light);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+
+.article-card h2 a{
+  color: var(--ink);
+  border-bottom: 0;
+  padding-bottom: 0;
+  text-transform: none;
+  letter-spacing: -.02em;
+}
+
+.article-card h2 a:hover{
+  color: var(--rose);
+}
