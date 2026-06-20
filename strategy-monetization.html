@@ -10,10 +10,90 @@
   <meta property="og:description" content="Помогу понять, куда направить усилия и как монетизировать творческий проект.">
   <meta property="og:image" content="about-irina.jpg">
   <meta property="og:type" content="website">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKBG47SY8M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EKBG47SY8M');
+  </script>
+
+  <style>
+    .faq-list{
+      display:grid;
+      gap:16px;
+    }
+
+    .faq-item{
+      background:var(--paper);
+      border-radius:24px;
+      padding:0;
+      box-shadow:0 10px 30px rgba(53,45,36,.035);
+      overflow:hidden;
+    }
+
+    .faq-item summary{
+      cursor:pointer;
+      list-style:none;
+      padding:24px 30px;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:32px;
+      line-height:1.1;
+      font-weight:500;
+      color:var(--ink);
+      display:flex;
+      justify-content:space-between;
+      gap:24px;
+      align-items:center;
+    }
+
+    .faq-item summary::-webkit-details-marker{
+      display:none;
+    }
+
+    .faq-item summary::after{
+      content:"+";
+      font-family:Inter,system-ui,sans-serif;
+      font-size:28px;
+      line-height:1;
+      color:var(--blue);
+      flex:0 0 auto;
+    }
+
+    .faq-item[open] summary::after{
+      content:"−";
+    }
+
+    .faq-item p{
+      margin:0;
+      padding:0 30px 28px;
+      color:var(--muted);
+      line-height:1.75;
+      max-width:820px;
+    }
+
+    .strategy-note{
+      margin-top:30px;
+    }
+
+    @media(max-width:640px){
+      .faq-item summary{
+        font-size:26px;
+        padding:20px 22px;
+      }
+
+      .faq-item p{
+        padding:0 22px 24px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -44,20 +124,22 @@
         которые хотят понять, куда направить усилия и как превратить идеи, навыки и опыт
         в устойчивый доход.
       </p>
+
       <p class="about-lead">
         Не обязательно делать больше. Часто достаточно понять, что именно стоит делать дальше.
       </p>
-      <div class="portfolio-card" style="margin-top:30px">
-  <p class="about-lead">
-    Не разбор портфолио.<br>
-    Не критика.<br>
-    Не общие советы.
-  </p>
 
-  <p>
-    А персональная стратегия: куда двигаться, что развивать и как это монетизировать.
-  </p>
-</div>
+      <div class="portfolio-card strategy-note">
+        <p class="about-lead">
+          Не разбор портфолио.<br>
+          Не критика.<br>
+          Не общие советы.
+        </p>
+        <p>
+          А персональная стратегия: куда двигаться, что развивать и как это монетизировать.
+        </p>
+      </div>
+
       <div class="actions">
         <a class="button dark" href="https://t.me/artweinspire" target="_blank" rel="noopener noreferrer">
           Получить персональную стратегию
@@ -69,6 +151,7 @@
   <section class="section">
     <div class="container">
       <div class="section-label"><span>Когда нужна такая стратегия</span></div>
+
       <p class="about-lead">
         Иногда проблема не в том, что вы мало работаете. Проблема в том, что вы одновременно
         тянете слишком много направлений и не понимаете, какое из них приведёт к результату.
@@ -90,44 +173,20 @@
       <div class="about-image">
         <img src="about-irina.jpg" alt="Ирина Марковка">
       </div>
+
       <div class="about-copy">
         <p class="eyebrow">Это не просто консультация</p>
-        <section class="section">
-  <div class="container final-grid">
-
-    <article class="telegram-card">
-      <h2>Что вы НЕ получите</h2>
-
-      <ul class="simple-list">
-        <li>разбор в стиле «всё плохо»</li>
-        <li>попытку переделать вас под чужой успех</li>
-        <li>универсальные советы</li>
-        <li>давление и обесценивание</li>
-      </ul>
-    </article>
-
-    <article class="portfolio-card">
-      <h2>Что вы получите</h2>
-
-      <ul class="simple-list">
-        <li>взгляд со стороны</li>
-        <li>понимание сильных сторон</li>
-        <li>поиск точек роста</li>
-        <li>приоритеты и фокус</li>
-        <li>конкретные следующие шаги</li>
-      </ul>
-    </article>
-
-  </div>
-</section>
         <h2>Аудит + стратегия + план действий</h2>
+
         <p class="about-lead">
           Ясность → фокус → стратегия → конкретный план действий.
         </p>
+
         <p>
           Я смотрю на проект целиком: работы, сильные стороны, коммерческий потенциал,
           возможные направления развития и точки монетизации.
         </p>
+
         <p>
           Формат основан на реальных разборах творческих проектов, которые я провожу с 2019 года.
           Это асинхронный разбор: без обязательного созвона, привязки к часовым поясам и технических рисков.
@@ -137,17 +196,45 @@
   </section>
 
   <section class="section">
+    <div class="container final-grid">
+      <article class="telegram-card">
+        <h2>Что вы НЕ получите</h2>
+        <ul class="simple-list">
+          <li>разбор в стиле «всё плохо»</li>
+          <li>попытку переделать вас под чужой успех</li>
+          <li>универсальные советы</li>
+          <li>давление и обесценивание</li>
+        </ul>
+      </article>
+
+      <article class="portfolio-card">
+        <h2>Что вы получите</h2>
+        <ul class="simple-list">
+          <li>взгляд со стороны</li>
+          <li>понимание сильных сторон</li>
+          <li>поиск точек роста</li>
+          <li>приоритеты и фокус</li>
+          <li>конкретные следующие шаги</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="container">
       <div class="portfolio-card">
         <p class="eyebrow">Как я работаю</p>
         <h2>Куда направить усилия и как это монетизировать</h2>
+
         <p class="about-lead">
           Вместо общих советов я анализирую вашу ситуацию целиком.
         </p>
+
         <p>
           Я смотрю не только на работы, но и на весь проект: ваш опыт, портфолио,
           текущих клиентов, сильные стороны, интересы и цели, рынок, спрос и возможные источники дохода.
         </p>
+
         <p>
           Моя задача — не просто оценить работы, а помочь понять, что из всего вашего опыта,
           навыков и идей может стать основой для дальнейшего роста.
@@ -182,6 +269,7 @@
   <section class="section">
     <div class="container">
       <div class="section-label"><span>На что я смотрю</span></div>
+
       <ul class="columns-list">
         <li>реальные работы, проекты, сайт и соцсети</li>
         <li>сильные стороны и ограничения</li>
@@ -221,14 +309,16 @@
   <section class="section">
     <div class="container">
       <div class="section-label"><span>Как проходит работа</span></div>
+
       <div class="reviews-grid">
-        <blockquote><p>1<br>Вы заполняете анкету или пишете мне в Telegram</p></blockquote>
+        <blockquote><p>1<br>Вы пишете мне в Telegram</p></blockquote>
         <blockquote><p>2<br>Присылаете ссылки, работы и вопросы</p></blockquote>
         <blockquote><p>3<br>Я изучаю материалы</p></blockquote>
         <blockquote><p>4<br>Записываю персональный аудио- или видеоразбор</p></blockquote>
         <blockquote><p>5<br>Вы получаете запись и можете переслушивать её в удобное время</p></blockquote>
         <blockquote><p>6<br>Длительность зависит от объёма материалов и запроса</p></blockquote>
       </div>
+
       <p class="body-text" style="margin-top:32px">
         Я не ограничиваю разбор формально по минутам. Задача — дать вам ясность,
         приоритеты и конкретный план действий.
@@ -239,9 +329,11 @@
   <section class="section">
     <div class="container">
       <div class="section-label"><span>Что происходит внутри разбора</span></div>
+
       <p class="about-lead">
         Это не просто обратная связь на работы.
       </p>
+
       <p class="body-text">
         Я анализирую проект целиком и ищу точки роста именно для вашей ситуации.
       </p>
@@ -302,6 +394,7 @@
       <div class="about-copy">
         <p class="eyebrow">Что вы получите</p>
         <h2>Ясность, приоритеты и следующие шаги</h2>
+
         <ul class="simple-list">
           <li>понимание, куда двигаться дальше</li>
           <li>список приоритетных действий</li>
@@ -318,37 +411,48 @@
 
       <div class="about-copy">
         <div class="portfolio-card" style="margin-bottom:40px">
-  <h2>Что можно прислать для разбора</h2>
+          <h2>Что можно прислать для разбора</h2>
 
-  <ul class="columns-list">
-    <li>портфолио</li>
-    <li>сайт</li>
-    <li>соцсети</li>
-    <li>коллекции</li>
-    <li>описание ситуации</li>
-    <li>вопросы</li>
-    <li>текущие цели</li>
-  </ul>
+          <ul class="columns-list">
+            <li>портфолио</li>
+            <li>сайт</li>
+            <li>соцсети</li>
+            <li>коллекции</li>
+            <li>описание ситуации</li>
+            <li>вопросы</li>
+            <li>текущие цели</li>
+          </ul>
 
-  <p>
-    Даже если у вас нет готового портфолио или чётко сформулированного запроса,
-    можно просто написать мне в Telegram и коротко описать ситуацию.
-  </p>
-</div>
+          <p>
+            Даже если у вас нет готового портфолио или чётко сформулированного запроса,
+            можно просто написать мне в Telegram и коротко описать ситуацию.
+          </p>
+        </div>
+
+        <div class="portfolio-card" style="margin-bottom:40px">
+          <h2>Не нужно становиться кем-то другим.</h2>
+          <p class="about-lead">
+            Нужно найти коммерческое применение тому, что уже получается лучше всего.
+          </p>
+        </div>
+
         <p class="eyebrow">Стоимость</p>
         <h2>15 000 ₽</h2>
+
         <p>
           Вы присылаете материалы, я изучаю их и записываю персональный разбор.
           Вы получаете не просто обратную связь, а персональную стратегию развития проекта
           с конкретными рекомендациями и следующими шагами.
         </p>
+
         <p>
-  Если я пойму, что ваш запрос не подходит под формат стратегического разбора,
-  я честно скажу об этом до оплаты.
-</p>
+          Если я пойму, что ваш запрос не подходит под формат стратегического разбора,
+          я честно скажу об этом до оплаты.
+        </p>
+
         <div class="actions">
           <a class="button dark" href="https://t.me/artweinspire" target="_blank" rel="noopener noreferrer">
-            Записаться в Telegram
+            Обсудить разбор в Telegram
           </a>
         </div>
       </div>
@@ -358,6 +462,7 @@
   <section class="section">
     <div class="container">
       <div class="section-label"><span>С какими вопросами ко мне приходят</span></div>
+
       <div class="reviews-grid">
         <blockquote><p>Не понимаю, на чём сосредоточиться.</p></blockquote>
         <blockquote><p>Есть портфолио, но мало клиентов.</p></blockquote>
@@ -377,46 +482,48 @@
     <div class="container">
       <div class="section-label"><span>FAQ</span></div>
 
-      <div class="product-grid">
-        <article class="product">
-          <h2>Это разбор портфолио?</h2>
-          <p class="product-text">
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Это разбор портфолио?</summary>
+          <p>
             Не только. Работы — это часть общей картины. Мы рассматриваем проект целиком:
-            навыки, опыт, сильные стороны, текущие результаты, ограничения, варианты монетизации и направления развития.
+            навыки, опыт, сильные стороны, текущие результаты, ограничения,
+            варианты монетизации и направления развития.
           </p>
-        </article>
+        </details>
 
-        <article class="product">
-          <h2>Вы будете критиковать мои работы?</h2>
-          <p class="product-text">
+        <details class="faq-item">
+          <summary>Вы будете критиковать мои работы?</summary>
+          <p>
             Нет. Я не начинаю с поиска ошибок. Сначала мы ищем то, что уже работает.
             Моя задача — не обесценить вашу работу, а помочь увидеть сильные стороны и точки роста.
           </p>
-        </article>
+        </details>
 
-        <article class="product">
-          <h2>Что если я не понимаю, на чём могу зарабатывать?</h2>
-          <p class="product-text">
-            Это одна из самых частых тем разбора. Мы рассматриваем разные варианты монетизации и ищем те,
-            которые подходят именно вашему опыту, стилю работы и текущей ситуации.
+        <details class="faq-item">
+          <summary>Что если я не понимаю, на чём могу зарабатывать?</summary>
+          <p>
+            Это одна из самых частых тем разбора. Мы рассматриваем разные варианты монетизации
+            и ищем те, которые подходят именно вашему опыту, стилю работы и текущей ситуации.
           </p>
-        </article>
+        </details>
 
-        <article class="product">
-          <h2>Что если у меня много идей?</h2>
-          <p class="product-text">
+        <details class="faq-item">
+          <summary>Что если у меня много идей?</summary>
+          <p>
             Обычно проблема не в отсутствии идей, а в отсутствии приоритетов.
-            Во время разбора мы определяем, какие направления имеют наибольший потенциал.
+            Во время разбора мы определяем, какие направления имеют наибольший потенциал
+            и на чём стоит сосредоточиться в первую очередь.
           </p>
-        </article>
+        </details>
 
-        <article class="product">
-          <h2>Что если моя идея уже занята другими?</h2>
-          <p class="product-text">
+        <details class="faq-item">
+          <summary>Что если моя идея уже занята другими?</summary>
+          <p>
             Часто проблема не в самой идее, а в страхе занять своё место рядом с другими авторами.
             Мы ищем способ развивать направление через ваш собственный стиль, опыт и сильные стороны.
           </p>
-        </article>
+        </details>
       </div>
     </div>
   </section>
@@ -424,14 +531,17 @@
   <section class="section">
     <div class="container">
       <div class="section-label"><span>Обо мне</span></div>
+
       <p class="about-lead">
         Более 15 лет я работаю в иллюстрации, дизайне, стоках, лицензировании и с международными клиентами.
       </p>
+
       <p class="body-text">
         Я прошла путь от микростоков до прямых заказов и проектов для брендов.
         На стратегиях помогаю творческим специалистам увидеть коммерческий потенциал своих идей
         и собрать понятный план развития.
       </p>
+
       <p class="body-text">
         Формат основан на реальных разборах творческих проектов, которые я провожу с 2019 года.
         За это время мне довелось помогать авторам искать свои сильные стороны, находить точки роста
@@ -448,7 +558,7 @@
           Пришлите свои материалы, и я подготовлю персональную стратегию под вашу ситуацию.
         </p>
         <a class="button dark" href="https://t.me/artweinspire" target="_blank" rel="noopener noreferrer">
-          Заполнить анкету
+          Обсудить разбор в Telegram
         </a>
       </article>
 
