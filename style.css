@@ -404,3 +404,11 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
   .article-cover-label strong{font-size:23px}
   .footer-inner{display:grid;gap:10px}
 }
+.strategy-price-card .small-note {
+    font-size: 15px;
+    color: #7d7a74;
+    line-height: 1.55;
+    max-width: 640px;
+    margin-top: 32px;
+    margin-bottom: 28px;
+}

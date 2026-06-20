@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Персональная стратегия монетизации творческого проекта</title>
-  <meta name="description" content="Аудит, стратегия и план действий для дизайнеров, иллюстраторов, авторов паттернов и творческих специалистов.">
+  <meta name="description" content="Персональная стратегия монетизации для дизайнеров, иллюстраторов, авторов паттернов и творческих специалистов.">
   <meta property="og:title" content="Персональная стратегия монетизации творческого проекта">
   <meta property="og:description" content="Помогу понять, куда направить усилия и как монетизировать творческий проект.">
-  <meta property="og:image" content="about-irina.jpg">
+  <meta property="og:image" content="strategy-irina.png">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKBG47SY8M"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -26,66 +25,141 @@
   </script>
 
   <style>
-    .strategy-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    .strategy-mini-card{
-      background:var(--paper);
-      border-radius:26px;
-      padding:30px;
-      box-shadow:0 10px 30px rgba(53,45,36,.035);
-      min-height:170px;
-    }
-    .strategy-mini-card h3{
-      font-family:"Cormorant Garamond",Georgia,serif;
-      font-size:34px;
-      line-height:1.05;
-      font-weight:500;
-      margin:0 0 14px;
-      color:var(--ink);
-    }
-    .strategy-mini-card p{margin:0;color:var(--muted)}
-    .strategy-price-card{
+    .strategy-hero{padding:96px 0 58px}
+    .strategy-hero h1{max-width:760px}
+    .strategy-hero .about-lead{max-width:720px}
+
+    .soft-card{
       background:var(--paper);
       border-radius:34px;
       padding:48px;
       box-shadow:var(--shadow);
     }
+
+    .tinted-rose{background:var(--paper-rose)}
+    .tinted-blue{background:var(--paper-blue)}
+
+    .price-grid{
+      display:grid;
+      grid-template-columns:1fr 340px;
+      gap:44px;
+      align-items:start;
+    }
+
     .strategy-price{
       font-family:"Cormorant Garamond",Georgia,serif;
-      font-size:56px;
+      font-size:58px;
       line-height:1;
       margin:18px 0 24px;
       color:var(--ink);
     }
-    .trust-stats{
+
+    .small-note{
+      font-size:15px;
+      color:#7d7a74;
+      line-height:1.55;
+      max-width:660px;
+      margin:30px 0 28px;
+    }
+
+    .question-grid{
       display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:18px;
-      margin:0 0 36px;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+      margin-top:30px;
     }
-    .trust-stat{
-      background:var(--paper-blue);
-      border-radius:22px;
-      padding:24px;
-      color:var(--blue);
+
+    .question-card{
+      background:var(--paper);
+      border-radius:24px;
+      padding:28px;
+      min-height:132px;
+      box-shadow:0 10px 30px rgba(53,45,36,.035);
+    }
+
+    .question-card p{margin:0;color:var(--muted);font-size:18px;line-height:1.55}
+
+    .about-strategy{
+      display:grid;
+      grid-template-columns:500px 1fr;
+      gap:52px;
+      align-items:center;
+    }
+
+    .about-strategy img{
+      width:100%;
+      display:block;
+      border-radius:30px;
+    }
+
+    .about-strategy h2{max-width:560px}
+    .about-strategy p{max-width:620px}
+
+    .number-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+      margin-top:34px;
+    }
+
+    .number-card{
+      background:var(--paper);
+      border-radius:26px;
+      padding:30px;
+      min-height:165px;
+      box-shadow:0 10px 30px rgba(53,45,36,.035);
+    }
+
+    .number-card strong{
+      display:block;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:36px;
+      line-height:1;
+      color:var(--ink);
+      margin-bottom:22px;
+    }
+
+    .number-card p{margin:0;color:var(--muted);line-height:1.55}
+
+    .result-list{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px 34px;
+      margin:28px 0 0;
+      padding:0;
+      list-style:none;
+    }
+
+    .result-list li{
+      position:relative;
+      padding-left:26px;
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    .result-list li::before{
+      content:"✓";
+      position:absolute;
+      left:0;
+      top:0;
+      color:var(--rose);
       font-weight:800;
-      line-height:1.35;
     }
-    .faq-list{display:grid;gap:14px}
+
+    .faq-list{display:grid;gap:14px;margin-top:28px}
     .faq-item{
       background:var(--paper);
       border-radius:22px;
-      padding:0;
-      box-shadow:0 10px 30px rgba(53,45,36,.035);
       overflow:hidden;
+      box-shadow:0 10px 30px rgba(53,45,36,.035);
     }
     .faq-item summary{
       cursor:pointer;
       list-style:none;
       padding:22px 28px;
       font-family:"Cormorant Garamond",Georgia,serif;
-      font-size:30px;
+      font-size:29px;
       line-height:1.1;
-      font-weight:500;
       color:var(--ink);
       display:flex;
       justify-content:space-between;
@@ -96,9 +170,8 @@
     .faq-item summary::after{
       content:"+";
       font-family:Inter,system-ui,sans-serif;
-      font-size:26px;
-      line-height:1;
       color:var(--blue);
+      font-size:25px;
       flex:0 0 auto;
     }
     .faq-item[open] summary::after{content:"−"}
@@ -109,14 +182,21 @@
       line-height:1.65;
       max-width:820px;
     }
+
     @media(max-width:1020px){
-      .strategy-grid-3,.trust-stats{grid-template-columns:1fr}
+      .price-grid,
+      .about-strategy,
+      .question-grid,
+      .number-grid,
+      .result-list{grid-template-columns:1fr}
     }
+
     @media(max-width:640px){
-      .strategy-mini-card{padding:24px}
-      .strategy-mini-card h3{font-size:30px}
-      .strategy-price-card{padding:30px}
+      .strategy-hero{padding:58px 0 34px}
+      .soft-card{padding:28px;border-radius:26px}
       .strategy-price{font-size:46px}
+      .question-card,.number-card{padding:24px}
+      .about-strategy{gap:28px}
       .faq-item summary{font-size:25px;padding:20px 22px}
       .faq-item p{padding:0 22px 24px}
     }
@@ -142,178 +222,132 @@
 </header>
 
 <main>
-  <section class="articles-hero">
+  <section class="strategy-hero">
     <div class="container">
-      <p class="eyebrow">Аудит · Стратегия · План действий</p>
+      <p class="eyebrow">Аудит · стратегия · план действий</p>
       <h1>Персональная стратегия монетизации творческого проекта</h1>
-
       <p class="about-lead">
-        Помогаю творческим специалистам увидеть собственный потенциал, найти точки роста и понять, куда направить усилия, чтобы проект развивался и приносил доход.
+        Помогаю дизайнерам, иллюстраторам и авторам паттернов понять, куда направить усилия,
+        что развивать дальше и как превратить творческий опыт в доход.
       </p>
-
       <div class="actions">
-        <a class="button dark" href="https://docs.google.com/forms/d/1lf9KseqGWi2FmkiFGvXtNCnMNeQKkgYbypA-zxr-Fec/viewform" target="_blank" rel="noopener noreferrer">
-          Оставить заявку
-        </a>
+        <a class="button dark" href="https://docs.google.com/forms/d/1lf9KseqGWi2FmkiFGvXtNCnMNeQKkgYbypA-zxr-Fec/viewform" target="_blank" rel="noopener noreferrer">Оставить заявку</a>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container strategy-price-card">
-      <div class="section-label"><span>Стоимость</span></div>
+    <div class="container soft-card">
+      <div class="price-grid">
+        <div>
+          <div class="section-label"><span>Стоимость</span></div>
+          <h2>Персональная стратегия монетизации вашего проекта</h2>
+          <p class="strategy-price">15 000 ₽</p>
 
-      <h2>Персональный стратегический разбор проекта</h2>
-      <p class="strategy-price">15 000 ₽</p>
+          <ul class="simple-list">
+            <li>разбор портфолио, сайта и соцсетей</li>
+            <li>поиск направлений с наибольшим потенциалом дохода</li>
+            <li>рекомендации по монетизации и упаковке</li>
+            <li>приоритетный план действий на 1–3 месяца</li>
+          </ul>
 
-      <ul class="simple-list">
-        <li>анализ материалов</li>
-        <li>поиск точек роста</li>
-        <li>рекомендации</li>
-        <li>план действий</li>
-      </ul>
+          <p class="small-note">
+            Если я пойму, что ваш запрос не подходит под формат стратегического разбора,
+            я честно скажу об этом до оплаты.
+          </p>
 
-      <p>
-        Если я пойму, что ваш запрос не подходит под формат стратегического разбора,
-        я честно скажу об этом до оплаты.
-      </p>
+          <div class="actions">
+            <a class="button dark" href="https://docs.google.com/forms/d/1lf9KseqGWi2FmkiFGvXtNCnMNeQKkgYbypA-zxr-Fec/viewform" target="_blank" rel="noopener noreferrer">Оставить заявку</a>
+          </div>
+        </div>
 
-      <div class="actions">
-        <a class="button dark" href="https://docs.google.com/forms/d/1lf9KseqGWi2FmkiFGvXtNCnMNeQKkgYbypA-zxr-Fec/viewform" target="_blank" rel="noopener noreferrer">
-          Оставить заявку
-        </a>
+        <div class="tinted-blue soft-card">
+          <p class="eyebrow">Формат</p>
+          <p class="body-text">
+            Вы присылаете материалы, ссылки и вопросы. Я изучаю проект и записываю
+            персональный аудио- или видеоразбор с рекомендациями.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section tinted-rose">
     <div class="container">
       <div class="section-label"><span>Когда нужна такая стратегия</span></div>
-
       <p class="about-lead">
-        Иногда проблема не в том, что вы мало работаете. Проблема в том, что вы одновременно
-        тянете слишком много направлений и не понимаете, какое из них приведёт к результату.
+        Когда вы много делаете, но не понимаете, какое направление действительно ведёт
+        к клиентам, продуктам, лицензированию или стабильному доходу.
       </p>
 
-      <div class="reviews-grid">
-        <blockquote><p>Много идей, но нет фокуса</p></blockquote>
-        <blockquote><p>Есть портфолио, но мало клиентов</p></blockquote>
-        <blockquote><p>Хочется монетизировать творчество, но непонятно как</p></blockquote>
-        <blockquote><p>Сложно выбрать между клиентами, лицензированием, стоками, продуктами и контентом</p></blockquote>
-        <blockquote><p>Устали от хаотичных действий</p></blockquote>
-        <blockquote><p>Нужен понятный план</p></blockquote>
+      <div class="question-grid">
+        <article class="question-card"><p>Много идей, но нет фокуса.</p></article>
+        <article class="question-card"><p>Есть портфолио, но мало клиентов.</p></article>
+        <article class="question-card"><p>Хочется монетизировать творчество, но непонятно как.</p></article>
+        <article class="question-card"><p>Сложно выбрать между клиентами, лицензированием, стоками, продуктами и контентом.</p></article>
+        <article class="question-card"><p>Есть опыт, но непонятно, как его упаковать.</p></article>
+        <article class="question-card"><p>Нужен понятный план вместо хаотичных действий.</p></article>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container final-grid">
-      <article class="telegram-card">
-        <h2>Что вы НЕ получите</h2>
-        <ul class="simple-list">
-          <li>разбор в стиле «всё плохо»</li>
-          <li>попытку переделать вас под чужой успех</li>
-          <li>универсальные советы</li>
-          <li>давление и обесценивание</li>
-        </ul>
-      </article>
+    <div class="container soft-card tinted-blue">
+      <div class="about-strategy">
+        <img src="strategy-irina.png" alt="Ирина Маркова за рабочим столом">
 
-      <article class="portfolio-card">
-        <h2>Что вы получите</h2>
-        <ul class="simple-list">
-          <li>взгляд со стороны</li>
-          <li>понимание сильных сторон</li>
-          <li>поиск точек роста</li>
-          <li>приоритеты и фокус</li>
-          <li>конкретные следующие шаги</li>
-        </ul>
-      </article>
-    </div>
-  </section>
+        <div>
+          <div class="section-label"><span>Обо мне</span></div>
+          <h2>Я смотрю не только на работы, а на весь проект целиком</h2>
 
-  <section class="section">
-    <div class="container">
-      <div class="portfolio-card">
-        <p class="eyebrow">Как я работаю</p>
-        <h2>Куда направить усилия и как это монетизировать</h2>
+          <p class="about-lead">
+            Более 15 лет я работаю с иллюстрацией, паттернами, лицензированием,
+            заказчиками, стоками и собственными творческими продуктами.
+          </p>
 
-        <p class="about-lead">
-          Вместо общих советов я анализирую вашу ситуацию целиком.
-        </p>
-
-        <p>
-          Я смотрю не только на работы, но и на весь проект: ваш опыт, портфолио,
-          текущих клиентов, сильные стороны, интересы и цели, рынок, спрос и возможные источники дохода.
-        </p>
-
-        <p>
-          Моя задача — не просто оценить работы, а помочь понять, что из всего вашего опыта,
-          навыков и идей может стать основой для дальнейшего роста.
-        </p>
+          <p class="body-text">
+            На разборе я анализирую не только визуальную часть. Я смотрю на навыки,
+            опыт, портфолио, упаковку, рынок, точки роста и возможные направления
+            монетизации.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container final-grid">
-      <article class="telegram-card">
-        <h2>Я ищу не ошибки. Я ищу потенциал.</h2>
-        <p>
-          Я не начинаю разбор с поиска ошибок. Сначала мы ищем то, что уже работает
-          и может стать основой дальнейшего развития.
-        </p>
-        <p>
-          Мне важно не сломать вашу уверенность в себе, а помочь увидеть сильные стороны проекта
-          и найти способы их развивать.
-        </p>
-      </article>
+    <div class="container">
+      <div class="section-label"><span>Что происходит внутри разбора</span></div>
+      <h2>Это не просто обратная связь на работы</h2>
+      <p class="about-lead">
+        Мы ищем не ошибки, а точки роста: что уже работает, что мешает развитию
+        и какие действия дадут самый понятный следующий шаг.
+      </p>
 
-      <article class="portfolio-card">
-        <h2>Не нужно становиться кем-то другим.</h2>
-        <p class="about-lead">
-          Нужно найти коммерческое применение тому, что уже получается лучше всего.
-        </p>
-      </article>
+      <div class="number-grid">
+        <article class="number-card"><strong>01</strong><p>Смотрю ваши работы, портфолио, сайт, соцсети и текущую упаковку.</p></article>
+        <article class="number-card"><strong>02</strong><p>Определяю сильные стороны проекта и то, на что уже можно опереться.</p></article>
+        <article class="number-card"><strong>03</strong><p>Ищу направления с наибольшим коммерческим потенциалом.</p></article>
+        <article class="number-card"><strong>04</strong><p>Помогаю отделить перспективные идеи от тех, что сейчас распыляют силы.</p></article>
+        <article class="number-card"><strong>05</strong><p>Формулирую рекомендации по упаковке, позиционированию и монетизации.</p></article>
+        <article class="number-card"><strong>06</strong><p>Собираю приоритетный план действий на ближайшие 1–3 месяца.</p></article>
+      </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section tinted-rose">
     <div class="container">
-      <div class="section-label"><span>На что я смотрю</span></div>
+      <div class="section-label"><span>Что вы получите</span></div>
+      <h2>После разбора у вас будет больше ясности</h2>
 
-      <ul class="columns-list">
-        <li>реальные работы, проекты, сайт и соцсети</li>
-        <li>сильные стороны и ограничения</li>
-        <li>что уже работает и приносит результат</li>
-        <li>что тормозит развитие</li>
-        <li>коммерческий потенциал идей</li>
-        <li>возможные направления роста</li>
-        <li>точки монетизации</li>
-        <li>упаковку, позиционирование и оффер</li>
-        <li>следующие шаги на ближайшие месяцы</li>
+      <ul class="result-list">
+        <li>понимание, какие направления реально могут приносить доход</li>
+        <li>оценка портфолио, сайта, соцсетей и текущей упаковки</li>
+        <li>поиск точек роста и неиспользованных возможностей</li>
+        <li>конкретные рекомендации по монетизации проекта</li>
+        <li>приоритетный план действий на ближайшие месяцы</li>
+        <li>понимание, что оставить, что отложить и на чём сфокусироваться</li>
       </ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container final-grid">
-      <article class="telegram-card">
-        <h2>Помогу найти баланс между творчеством и заработком</h2>
-        <p>
-          Не каждая идея обязана приносить деньги. И не всё коммерческое должно быть скучным.
-          На разборе мы отделим проекты для души от тех направлений, которые могут привести
-          к клиентам, заказам, лицензированию или собственным продуктам.
-        </p>
-      </article>
-
-      <article class="portfolio-card">
-        <h2>С чем можно прийти</h2>
-        <p>
-          Портфолио, коллекции и паттерны, лицензирование, Upwork, Behance, сайт,
-          личный бренд, контент, образовательный продукт, цены и офферы,
-          творческий тупик, выбор направления.
-        </p>
-      </article>
     </div>
   </section>
 
@@ -321,13 +355,13 @@
     <div class="container">
       <div class="section-label"><span>Как проходит работа</span></div>
 
-      <div class="reviews-grid">
-        <blockquote><p>1<br>Вы оставляете заявку</p></blockquote>
-        <blockquote><p>2<br>Присылаете ссылки, работы и вопросы</p></blockquote>
-        <blockquote><p>3<br>Я изучаю материалы</p></blockquote>
-        <blockquote><p>4<br>Записываю персональный аудио- или видеоразбор</p></blockquote>
-        <blockquote><p>5<br>Вы получаете запись и можете переслушивать её в удобное время</p></blockquote>
-        <blockquote><p>6<br>Длительность зависит от объёма материалов и запроса</p></blockquote>
+      <div class="number-grid">
+        <article class="number-card"><strong>01</strong><p>Вы оставляете заявку и коротко описываете ситуацию.</p></article>
+        <article class="number-card"><strong>02</strong><p>Присылаете ссылки, работы, портфолио, сайт, соцсети и вопросы.</p></article>
+        <article class="number-card"><strong>03</strong><p>Я изучаю материалы и смотрю проект целиком.</p></article>
+        <article class="number-card"><strong>04</strong><p>Записываю персональный аудио- или видеоразбор.</p></article>
+        <article class="number-card"><strong>05</strong><p>Вы получаете запись и можете переслушивать её в удобное время.</p></article>
+        <article class="number-card"><strong>06</strong><p>При необходимости можно уточнить детали после просмотра.</p></article>
       </div>
 
       <p class="body-text" style="margin-top:32px">
@@ -337,126 +371,19 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section tinted-blue">
     <div class="container">
-      <div class="section-label"><span>Что происходит внутри разбора</span></div>
+      <div class="section-label"><span>С чем можно прийти</span></div>
+      <h2>Подойдут разные этапы и форматы творческого проекта</h2>
 
-      <p class="about-lead">
-        Это не просто обратная связь на работы.
-      </p>
-
-      <p class="body-text">
-        Я анализирую проект целиком и ищу точки роста именно для вашей ситуации.
-      </p>
-
-      <div class="strategy-grid-3" style="margin-top:32px">
-        <article class="strategy-mini-card"><h3>01</h3><p>Ваши работы и проекты</p></article>
-        <article class="strategy-mini-card"><h3>02</h3><p>Сильные стороны и ограничения</p></article>
-        <article class="strategy-mini-card"><h3>03</h3><p>Что уже работает</p></article>
-        <article class="strategy-mini-card"><h3>04</h3><p>Что мешает росту</p></article>
-        <article class="strategy-mini-card"><h3>05</h3><p>Возможности монетизации</p></article>
-        <article class="strategy-mini-card"><h3>06</h3><p>Следующие шаги на 1–3 месяца</p></article>
-      </div>
-
-      <p class="body-text" style="margin-top:32px">
-        Каждый разбор индивидуален. У двух авторов с похожими работами могут быть совершенно разные рекомендации
-        в зависимости от целей, опыта, ресурсов и образа жизни, который они хотят построить вокруг своего творчества.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container final-grid">
-      <article class="telegram-card">
-        <h2>Мы ищем не только идеи</h2>
-        <p>
-          Мы ищем решения, которые можно повторять и масштабировать без постоянного увеличения нагрузки.
-          Во время разбора я помогаю увидеть, что можно упростить, систематизировать, делегировать
-          и что уже работает и заслуживает большего внимания.
-        </p>
-      </article>
-
-      <article class="portfolio-card">
-        <h2>Не всё нужно делать самой.</h2>
-        <p class="about-lead">
-          Иногда рост начинается не с новых навыков, а с правильного распределения усилий.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="portfolio-card">
-        <h2>Часто проблема не в недостатке навыков.</h2>
-        <p class="about-lead">
-          Проблема в том, что человек не видит ценности того, что уже умеет.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-label"><span>Примеры результатов разбора</span></div>
-
-      <p class="body-text">
-        Каждый проект индивидуален, но рекомендации могут выглядеть примерно так:
-      </p>
-
-      <div class="strategy-grid-3" style="margin-top:32px">
-        <article class="strategy-mini-card"><p>Сосредоточиться на одном направлении и временно отказаться от остальных</p></article>
-        <article class="strategy-mini-card"><p>Перестроить портфолио под конкретный рынок</p></article>
-        <article class="strategy-mini-card"><p>Выделить основное направление монетизации</p></article>
-        <article class="strategy-mini-card"><p>Отложить часть идей на более поздний этап</p></article>
-        <article class="strategy-mini-card"><p>Собрать систему продуктов вокруг существующего опыта</p></article>
-        <article class="strategy-mini-card"><p>Изменить позиционирование проекта</p></article>
-        <article class="strategy-mini-card"><p>Сфокусироваться на поиске клиентов вместо создания новых работ</p></article>
-        <article class="strategy-mini-card"><p>Использовать уже существующие навыки в новом формате</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-label"><span>Что вы получите</span></div>
-
-      <p class="about-lead">
-        Главная цель разбора — не дать больше информации.
-      </p>
-      <p class="body-text">
-        Главная цель — помочь принять решения и определить следующие шаги.
-      </p>
-
-      <div class="strategy-grid-3" style="margin-top:32px">
-        <article class="strategy-mini-card"><h3>Ясность</h3><p>Понимание, куда двигаться дальше</p></article>
-        <article class="strategy-mini-card"><h3>Приоритеты</h3><p>Что действительно важно сейчас</p></article>
-        <article class="strategy-mini-card"><h3>План действий</h3><p>Конкретные следующие шаги</p></article>
-        <article class="strategy-mini-card"><h3>Точки монетизации</h3><p>Возможные источники дохода</p></article>
-        <article class="strategy-mini-card"><h3>Сильные стороны</h3><p>То, на что можно опереться</p></article>
-        <article class="strategy-mini-card"><h3>Следующие шаги</h3><p>План на ближайшие месяцы</p></article>
-        <article class="strategy-mini-card"><h3>Взгляд со стороны</h3><p>Независимая оценка ситуации</p></article>
-        <article class="strategy-mini-card"><h3>Фокус</h3><p>Меньше распыления</p></article>
-        <article class="strategy-mini-card"><h3>Уверенность</h3><p>Понимание своих решений</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-label"><span>С какими вопросами ко мне приходят</span></div>
-
-      <div class="strategy-grid-3">
-        <article class="strategy-mini-card"><p>Не понимаю, на чём сосредоточиться.</p></article>
-        <article class="strategy-mini-card"><p>Есть портфолио, но мало клиентов.</p></article>
-        <article class="strategy-mini-card"><p>Хочу перейти от заказов к своим продуктам.</p></article>
-        <article class="strategy-mini-card"><p>Не понимаю, как монетизировать свои навыки.</p></article>
-        <article class="strategy-mini-card"><p>Слишком много идей и направлений.</p></article>
-        <article class="strategy-mini-card"><p>Не знаю, какие проекты стоит развивать дальше.</p></article>
-        <article class="strategy-mini-card"><p>Хочу выйти на новый уровень дохода.</p></article>
-        <article class="strategy-mini-card"><p>Не понимаю, как упаковать свой опыт.</p></article>
-        <article class="strategy-mini-card"><p>Хочу работать больше в своём стиле, но не понимаю, как сделать это коммерческим.</p></article>
-      </div>
+      <ul class="result-list">
+        <li>портфолио, коллекции, паттерны, иллюстрации</li>
+        <li>лицензирование, Upwork, Behance, сайт, личный бренд</li>
+        <li>цены, офферы, упаковка услуг и продуктов</li>
+        <li>контент, образовательный продукт, вебинар или консультации</li>
+        <li>творческий тупик и выбор направления</li>
+        <li>переход от заказов к своим продуктам</li>
+      </ul>
     </div>
   </section>
 
@@ -467,7 +394,7 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>Это разбор портфолио?</summary>
-          <p>Не только. Портфолио — часть общей картины. Я смотрю на проект, цели, сильные стороны и варианты монетизации.</p>
+          <p>Не только. Портфолио — часть общей картины. Я смотрю на проект, цели, сильные стороны, упаковку и варианты монетизации.</p>
         </details>
 
         <details class="faq-item">
@@ -477,7 +404,7 @@
 
         <details class="faq-item">
           <summary>Что если я не понимаю, на чём могу зарабатывать?</summary>
-          <p>Это частая тема разбора. Мы смотрим разные варианты и выбираем те, которые подходят вашей ситуации.</p>
+          <p>Это частая тема разбора. Мы смотрим разные варианты и выбираем те, которые подходят вашей ситуации, опыту и ресурсу.</p>
         </details>
 
         <details class="faq-item">
@@ -489,64 +416,22 @@
   </section>
 
   <section class="section">
-    <div class="container">
-      <div class="section-label"><span>Почему я могу помочь</span></div>
-
-      <p class="about-lead">
-        Более 15 лет я работаю в иллюстрации, дизайне, лицензировании и международном фрилансе.
-      </p>
-
-      <p class="body-text">
-        За это время я прошла путь от микростоков до прямых клиентов, лицензирования, Upwork и собственных продуктов.
-        Я знаю не только как создавать работы, но и как превращать творческие навыки в источник дохода.
-      </p>
-
-      <p class="body-text">
-        Поэтому во время разбора мы говорим не только о творчестве, но и о рынке, клиентах,
-        позиционировании и стратегии развития.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-label"><span>Обо мне</span></div>
-
-      <div class="trust-stats">
-        <div class="trust-stat">15+ лет в дизайне и иллюстрации</div>
-        <div class="trust-stat">Монетизация творческих проектов с 2010 года</div>
-        <div class="trust-stat">150+ международных клиентов</div>
-        <div class="trust-stat">Expert Vetted Upwork Top 1%</div>
-      </div>
-
-      <p class="about-lead">
-        Меня зовут Ирина Марковка. Я иллюстратор и дизайнер паттернов.
-      </p>
-
-      <p class="body-text">
-        Я прошла путь от микростоков до прямых заказов и проектов для брендов.
-        На стратегиях помогаю творческим специалистам увидеть коммерческий потенциал своих идей
-        и собрать понятный план развития.
-      </p>
-
-      <p class="body-text">
-        Формат стратегических разборов основан на реальных разборах творческих проектов, которые я провожу с 2019 года.
-        А опыт монетизации творческих работ начался ещё со стоков в 2010 году.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
     <div class="container final-grid">
       <article class="telegram-card">
         <h2>Хотите понять, куда двигаться дальше?</h2>
-        <p>Расскажите о своей ситуации, проектах и целях. Я изучу заявку и материалы.</p>
+        <p>
+          Расскажите о своей ситуации, проектах и целях. Я изучу заявку и скажу,
+          подойдёт ли вам формат персональной стратегии.
+        </p>
         <a class="button dark" href="https://docs.google.com/forms/d/1lf9KseqGWi2FmkiFGvXtNCnMNeQKkgYbypA-zxr-Fec/viewform" target="_blank" rel="noopener noreferrer">Оставить заявку</a>
       </article>
 
       <article class="portfolio-card">
         <h2>Дополнительный материал</h2>
-        <p>Отдельно можно посмотреть вебинар о монетизации иллюстрации, паттернов, портфолио и поиске клиентов.</p>
+        <p>
+          Отдельно можно посмотреть вебинар о монетизации иллюстрации, паттернов,
+          портфолио и поиске клиентов.
+        </p>
         <a class="button rose" href="webinar.html">Перейти к вебинару</a>
       </article>
     </div>
