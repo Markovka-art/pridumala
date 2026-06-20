@@ -62,22 +62,25 @@
       margin:30px 0 28px;
     }
 
-    .question-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:20px;
+    .pill-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
       margin-top:30px;
+      padding:0;
+      list-style:none;
+      max-width:980px;
     }
 
-    .question-card{
+    .pill-list li{
       background:var(--paper);
-      border-radius:24px;
-      padding:28px;
-      min-height:132px;
+      border-radius:999px;
+      padding:14px 20px;
+      color:var(--muted);
       box-shadow:0 10px 30px rgba(53,45,36,.035);
+      font-size:17px;
+      line-height:1.45;
     }
-
-    .question-card p{margin:0;color:var(--muted);font-size:18px;line-height:1.55}
 
     .about-strategy{
       display:grid;
@@ -146,6 +149,37 @@
       font-weight:800;
     }
 
+    .process-list{
+      display:grid;
+      gap:18px;
+      margin-top:34px;
+      max-width:920px;
+    }
+
+    .process-step{
+      display:grid;
+      grid-template-columns:76px 1fr;
+      gap:24px;
+      align-items:start;
+      background:var(--paper);
+      border-radius:26px;
+      padding:26px 30px;
+      box-shadow:0 10px 30px rgba(53,45,36,.035);
+    }
+
+    .process-step strong{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:36px;
+      line-height:1;
+      color:var(--ink);
+    }
+
+    .process-step p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+    }
+
     .faq-list{display:grid;gap:14px;margin-top:28px}
     .faq-item{
       background:var(--paper);
@@ -186,7 +220,6 @@
     @media(max-width:1020px){
       .price-grid,
       .about-strategy,
-      .question-grid,
       .number-grid,
       .result-list{grid-template-columns:1fr}
     }
@@ -195,8 +228,9 @@
       .strategy-hero{padding:58px 0 34px}
       .soft-card{padding:28px;border-radius:26px}
       .strategy-price{font-size:46px}
-      .question-card,.number-card{padding:24px}
+      .number-card{padding:24px}
       .about-strategy{gap:28px}
+      .process-step{grid-template-columns:1fr;gap:12px;padding:24px}
       .faq-item summary{font-size:25px;padding:20px 22px}
       .faq-item p{padding:0 22px 24px}
     }
@@ -212,7 +246,7 @@
   <nav class="nav" aria-label="Навигация">
     <a href="index.html">Главная</a>
     <a href="webinar.html">Вебинар</a>
-    <a href="strategy-monetization.html">Персональная стратегия</a>
+    <a href="strategy.html">Персональная стратегия</a>
     <a href="articles.html">Статьи</a>
     <a href="index.html#reviews">Отзывы</a>
     <a href="index.html#about">Обо мне</a>
@@ -280,14 +314,14 @@
         к клиентам, продуктам, лицензированию или стабильному доходу.
       </p>
 
-      <div class="question-grid">
-        <article class="question-card"><p>Много идей, но нет фокуса.</p></article>
-        <article class="question-card"><p>Есть портфолио, но мало клиентов.</p></article>
-        <article class="question-card"><p>Хочется монетизировать творчество, но непонятно как.</p></article>
-        <article class="question-card"><p>Сложно выбрать между клиентами, лицензированием, стоками, продуктами и контентом.</p></article>
-        <article class="question-card"><p>Есть опыт, но непонятно, как его упаковать.</p></article>
-        <article class="question-card"><p>Нужен понятный план вместо хаотичных действий.</p></article>
-      </div>
+      <ul class="pill-list">
+        <li>Много идей, но нет фокуса</li>
+        <li>Есть портфолио, но мало клиентов</li>
+        <li>Хочется монетизировать творчество</li>
+        <li>Сложно выбрать направление</li>
+        <li>Есть опыт, но непонятно, как его упаковать</li>
+        <li>Нужен понятный план вместо хаоса</li>
+      </ul>
     </div>
   </section>
 
@@ -355,13 +389,36 @@
     <div class="container">
       <div class="section-label"><span>Как проходит работа</span></div>
 
-      <div class="number-grid">
-        <article class="number-card"><strong>01</strong><p>Вы оставляете заявку и коротко описываете ситуацию.</p></article>
-        <article class="number-card"><strong>02</strong><p>Присылаете ссылки, работы, портфолио, сайт, соцсети и вопросы.</p></article>
-        <article class="number-card"><strong>03</strong><p>Я изучаю материалы и смотрю проект целиком.</p></article>
-        <article class="number-card"><strong>04</strong><p>Записываю персональный аудио- или видеоразбор.</p></article>
-        <article class="number-card"><strong>05</strong><p>Вы получаете запись и можете переслушивать её в удобное время.</p></article>
-        <article class="number-card"><strong>06</strong><p>При необходимости можно уточнить детали после просмотра.</p></article>
+      <div class="process-list">
+        <div class="process-step">
+          <strong>01</strong>
+          <p>Вы оставляете заявку и коротко описываете ситуацию.</p>
+        </div>
+
+        <div class="process-step">
+          <strong>02</strong>
+          <p>Присылаете ссылки, работы, портфолио, сайт, соцсети и вопросы.</p>
+        </div>
+
+        <div class="process-step">
+          <strong>03</strong>
+          <p>Я изучаю материалы и смотрю проект целиком.</p>
+        </div>
+
+        <div class="process-step">
+          <strong>04</strong>
+          <p>Записываю персональный аудио- или видеоразбор.</p>
+        </div>
+
+        <div class="process-step">
+          <strong>05</strong>
+          <p>Вы получаете запись и можете переслушивать её в удобное время.</p>
+        </div>
+
+        <div class="process-step">
+          <strong>06</strong>
+          <p>При необходимости можно уточнить детали после просмотра.</p>
+        </div>
       </div>
 
       <p class="body-text" style="margin-top:32px">
