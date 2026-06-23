@@ -8,66 +8,515 @@
   <meta name="description" content="Практический вебинар для дизайнеров, иллюстраторов и авторов паттернов: портфолио, клиенты, Upwork, цены и продажи творческих услуг.">
   <meta property="og:title" content="Как зарабатывать на иллюстрации и паттернах">
   <meta property="og:description" content="Запись вебинара 3 часа 39 минут и PDF более 100 страниц.">
-  <meta property="og:image" content="cover1.jpg">
+  <meta property="og:image" content="webinar-cover2.png">
   <meta property="og:type" content="website">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EKBG47SY8M"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
 
-gtag('config', 'G-EKBG47SY8M');
-</script>
+  <style>
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(300px, 460px);
+      gap: 54px;
+      align-items: center;
+    }
+
+    .hero-cover img {
+      width: 100%;
+      max-width: 460px;
+      border-radius: 24px;
+      box-shadow: 0 24px 60px rgba(20, 35, 45, 0.12);
+      display: block;
+    }
+
+    .hero-benefits {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0;
+    }
+
+    .hero-benefits li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 14px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .hero-benefits li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #5b84a8;
+      font-weight: 700;
+    }
+
+    .hero-price {
+      margin: 22px 0 8px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 1;
+      color: #527d9e;
+    }
+
+    .webinar-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .strip-item {
+      padding: 24px;
+      border-radius: 24px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(90,120,140,0.15);
+    }
+
+    .strip-item strong {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .program-list {
+      display: grid;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .program-row {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 22px;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(80,100,115,0.18);
+    }
+
+    .program-number {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 42px;
+      color: #527d9e;
+      line-height: 1;
+    }
+
+    .program-row h3 {
+      margin: 0 0 8px;
+    }
+
+    .program-row p {
+      margin: 0;
+    }
+
+    .audience-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px 46px;
+      margin-top: 28px;
+    }
+
+    .audience-item {
+      padding-left: 24px;
+      border-left: 2px solid #8fb0c7;
+    }
+
+    .audience-item h3 {
+      margin: 0 0 8px;
+    }
+
+    .audience-item p {
+      margin: 0;
+    }
+
+    .pdf-intro-box {
+      padding: 44px;
+      border-radius: 32px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(90,120,140,0.15);
+    }
+
+    .pdf-intro-box h2 {
+      margin-top: 0;
+    }
+
+    .pdf-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      padding: 0 28px 28px;
+    }
+
+    .pdf-shot {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(90,120,140,0.15);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 16px 42px rgba(20, 35, 45, 0.08);
+    }
+
+    .pdf-shot img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .pdf-shot p {
+      margin: 0;
+      padding: 14px 16px 18px;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .reviews-summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .review-card {
+      padding: 28px;
+      border-radius: 26px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(90,120,140,0.15);
+    }
+
+    .review-card p {
+      margin: 0 0 18px;
+    }
+
+    .review-card footer {
+      font-weight: 700;
+      color: #527d9e;
+    }
+
+    .reviews-details {
+      margin-top: 34px;
+      border-radius: 28px;
+      background: rgba(255,255,255,0.68);
+      border: 1px solid rgba(90,120,140,0.15);
+      overflow: hidden;
+    }
+
+    .reviews-details summary {
+      cursor: pointer;
+      padding: 24px 28px;
+      font-weight: 700;
+      color: #2f5364;
+    }
+
+    .review-screens-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      padding: 0 28px 28px;
+    }
+
+    .review-screens-grid img {
+      width: 100%;
+      border-radius: 18px;
+      display: block;
+      box-shadow: 0 12px 32px rgba(20, 35, 45, 0.12);
+    }
+
+    .price-box {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 44px;
+      border-radius: 32px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(90,120,140,0.15);
+      text-align: center;
+    }
+
+    .price-box .hero-benefits {
+      text-align: left;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .center-actions {
+      justify-content: center;
+      margin-top: 34px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .webinar-strip,
+      .audience-list,
+      .pdf-gallery,
+      .reviews-summary,
+      .review-screens-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 28px;
+      }
+
+      .hero-copy {
+        order: 1;
+      }
+
+      .hero-cover {
+        order: 2;
+      }
+
+      .hero-cover img {
+        max-width: 100%;
+        border-radius: 18px;
+      }
+
+      .articles-hero h1 {
+        font-size: clamp(46px, 14vw, 74px);
+        line-height: 0.95;
+      }
+
+      .actions .button {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .program-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .price-box,
+      .pdf-intro-box {
+        padding: 30px 22px;
+      }
+
+      .pdf-shot img {
+        aspect-ratio: auto;
+      }
+    }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKBG47SY8M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EKBG47SY8M');
+  </script>
 </head>
 
 <body>
   <header class="site-header">
-  <a class="brand" href="index.html" aria-label="Markovka">
-    <img src="logo-markovka.png" alt="Markovka">
-  </a>
+    <a class="brand" href="index.html" aria-label="Markovka">
+      <img src="logo-markovka.png" alt="Markovka">
+    </a>
 
-  <input class="nav-toggle" type="checkbox" id="nav-toggle">
-  <label class="burger" for="nav-toggle" aria-label="Открыть меню">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle">
+    <label class="burger" for="nav-toggle" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-  <nav class="nav" aria-label="Навигация">
-    <a href="index.html">Главная</a>
-    <a href="webinar.html">Вебинар</a>
-    <a href="strategy.html">Персональная стратегия</a>
-    <a href="articles.html">Статьи</a>
-    <a href="index.html#reviews">Отзывы</a>
-    <a href="index.html#about">Обо мне</a>
-  </nav>
+    <nav class="nav" aria-label="Навигация">
+      <a href="index.html">Главная</a>
+      <a href="webinar.html">Вебинар</a>
+      <a href="strategy.html">Персональная стратегия</a>
+      <a href="articles.html">Статьи</a>
+      <a href="index.html#reviews">Отзывы</a>
+      <a href="index.html#about">Обо мне</a>
+    </nav>
 
-  <a class="header-link" href="https://docs.google.com/forms/d/1lf9KseqGWi2FmkiFGvXtNCnMNeQKkgYbypA-zxr-Fec/viewform" target="_blank" rel="noopener noreferrer">Оставить заявку</a>
-</header>
+    <a class="header-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdtNIwjEwhyrS_S5xvC4GNTHMnZVz6UDMvT66RdPrq0_1zOiw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Купить вебинар</a>
   </header>
 
   <main>
-    <section class="articles-hero">
-      <div class="container">
-        <p class="eyebrow">Запись · PDF · Практический опыт</p>
-        <h1>Как зарабатывать на иллюстрации и паттернах</h1>
-        <p>
-          Практический вебинар для дизайнеров, иллюстраторов и авторов паттернов:
-          как оформить портфолио, где искать клиентов, как работать с зарубежными заказчиками
-          и продавать творческие услуги увереннее.
-        </p>
+    <section class="articles-hero webinar-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">3 часа 39 минут • PDF 100+ страниц • Практические кейсы</p>
 
-        <div class="actions">
+          <h1>Как зарабатывать на иллюстрации и паттернах</h1>
+
+          <ul class="hero-benefits">
+            <li>Портфолио, которое помогает получать заказы</li>
+            <li>Где искать клиентов в России и за рубежом</li>
+            <li>Upwork и работа с зарубежными заказчиками</li>
+            <li>Как назначать цены и продавать творческие услуги</li>
+          </ul>
+
+          <div class="hero-price">5 000 ₽</div>
+
+          <div class="actions">
+            <a class="button dark" href="https://docs.google.com/forms/d/e/1FAIpQLSdtNIwjEwhyrS_S5xvC4GNTHMnZVz6UDMvT66RdPrq0_1zOiw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+              Купить вебинар
+            </a>
+            <a class="button light" href="#program">
+              Смотреть программу
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-cover">
+          <img src="webinar-cover2.png" alt="Обложка вебинара Паттерны и способы монетизации">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-label">
+          <span>Что изменится после просмотра</span>
+        </div>
+
+        <div class="webinar-strip">
+          <div class="strip-item">
+            <strong>Портфолио начнёт работать</strong>
+            <p>Поймёте, что показывать клиенту и как объяснять ценность своей работы.</p>
+          </div>
+
+          <div class="strip-item">
+            <strong>Поиск клиентов станет проще</strong>
+            <p>Разберёте, где искать заказы и какие действия делать регулярно.</p>
+          </div>
+
+          <div class="strip-item">
+            <strong>Проще говорить о деньгах</strong>
+            <p>Поймёте, как назначать цену и обсуждать стоимость увереннее.</p>
+          </div>
+
+          <div class="strip-item">
+            <strong>Будет понятен следующий шаг</strong>
+            <p>Появится план, куда двигаться дальше, чтобы зарабатывать творчеством стабильнее.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-label">
+          <span>PDF-презентация</span>
+        </div>
+
+        <div class="pdf-intro-box">
+          <h2>Более 100 страниц практических материалов</h2>
+          <p>
+            Внутри — примеры портфолио, разбор площадок, кейсы клиентов,
+            цены, офферы и практические схемы работы.
+          </p>
+
+          <details class="reviews-details">
+            <summary>Смотреть фрагменты PDF-презентации</summary>
+
+            <div class="pdf-gallery">
+              <article class="pdf-shot">
+                <img src="pdf-monetization-map.jpg" alt="Карта способов монетизации паттернов">
+                <p>Карта способов монетизации.</p>
+              </article>
+
+              <article class="pdf-shot">
+                <img src="pdf-real-client-case.jpg" alt="Реальный клиентский кейс">
+                <p>Реальный клиентский кейс.</p>
+              </article>
+
+              <article class="pdf-shot">
+                <img src="pdf-portfolio-example.jpg" alt="Пример портфолио">
+                <p>Пример портфолио.</p>
+              </article>
+
+              <article class="pdf-shot">
+                <img src="pdf-mockups-and-tags.jpg" alt="Мокапы и теги">
+                <p>Мокапы и теги.</p>
+              </article>
+
+              <article class="pdf-shot">
+                <img src="pdf-upwork-job-selection.jpg" alt="Критерии отбора вакансий">
+                <p>Критерии отбора вакансий.</p>
+              </article>
+
+              <article class="pdf-shot">
+                <img src="pdf-pattern-pricing.jpg" alt="Примеры цен">
+                <p>Примеры цен.</p>
+              </article>
+
+              <article class="pdf-shot">
+                <img src="pdf-cover-letter-example.jpg" alt="Оффер для Upwork">
+                <p>Оффер для Upwork.</p>
+              </article>
+
+              <article class="pdf-shot">
+                <img src="pdf-client-red-flags.jpg" alt="Красные флаги клиентов">
+                <p>Красные флаги клиентов.</p>
+              </article>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="program">
+      <div class="container">
+        <div class="section-label">
+          <span>Что внутри вебинара</span>
+        </div>
+
+        <div class="program-list">
+          <div class="program-row">
+            <div class="program-number">01</div>
+            <div>
+              <h3>Направление и позиционирование</h3>
+              <p>Как понять, что именно вы продаёте как дизайнер или иллюстратор, и как объяснять это клиенту.</p>
+            </div>
+          </div>
+
+          <div class="program-row">
+            <div class="program-number">02</div>
+            <div>
+              <h3>Поиск первых и постоянных клиентов</h3>
+              <p>Где искать заказы, как не зависеть от случайных обращений и как выстроить регулярный поиск.</p>
+            </div>
+          </div>
+
+          <div class="program-row">
+            <div class="program-number">03</div>
+            <div>
+              <h3>Портфолио под коммерческие задачи</h3>
+              <p>Почему красивые работы сами по себе не продают и как показать клиенту решение его задачи.</p>
+            </div>
+          </div>
+
+          <div class="program-row">
+            <div class="program-number">04</div>
+            <div>
+              <h3>Upwork и зарубежные заказчики</h3>
+              <p>Как выбирать проекты, писать предложения и вести переписку спокойнее и увереннее.</p>
+            </div>
+          </div>
+
+          <div class="program-row">
+            <div class="program-number">05</div>
+            <div>
+              <h3>Цены, продажи и переговоры</h3>
+              <p>Как обсуждать стоимость, не обесценивать свою работу и вести клиента к покупке.</p>
+            </div>
+          </div>
+
+          <div class="program-row">
+            <div class="program-number">06</div>
+            <div>
+              <h3>Страхи творческих профессий</h3>
+              <p>Что мешает предлагать свои услуги, показывать работы и регулярно искать клиентов.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions center-actions">
           <a class="button dark" href="https://docs.google.com/forms/d/e/1FAIpQLSdtNIwjEwhyrS_S5xvC4GNTHMnZVz6UDMvT66RdPrq0_1zOiw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
             Купить вебинар за 5 000 ₽
-          </a>
-          <a class="button light" href="articles.html">
-            Читать статьи
           </a>
         </div>
       </div>
@@ -79,74 +528,25 @@ gtag('config', 'G-EKBG47SY8M');
           <span>Для кого</span>
         </div>
 
-        <div class="product-grid">
-          <article class="product">
-            <h2>Если есть портфолио, но мало клиентов</h2>
-            <p class="product-text">
-              Разберёте, как сделать портфолио понятным для заказчика и встроить его в регулярный поиск проектов.
-            </p>
-          </article>
+        <div class="audience-list">
+          <div class="audience-item">
+            <h3>Если есть портфолио, но мало клиентов</h3>
+            <p>Разберёте, как сделать портфолио понятным для заказчика и встроить его в поиск проектов.</p>
+          </div>
 
-          <article class="product">
-            <h2>Если хочется выйти на зарубежный рынок</h2>
-            <p class="product-text">
-              Поймёте, как выбирать площадки, писать предложения и общаться с клиентами без лишней тревоги.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
+          <div class="audience-item">
+            <h3>Если хочется выйти на зарубежный рынок</h3>
+            <p>Поймёте, как выбирать площадки, писать предложения и общаться с клиентами без лишней тревоги.</p>
+          </div>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-label">
-          <span>Что внутри вебинара</span>
-        </div>
+          <div class="audience-item">
+            <h3>Если вы рисуете паттерны, но не понимаете, как их продавать</h3>
+            <p>Увидите разные способы монетизации: клиентские заказы, стоки, прямые продажи и Upwork.</p>
+          </div>
 
-        <div class="reviews-grid">
-          <blockquote>
-            <p>01<br>Как выбрать направление и позиционирование</p>
-          </blockquote>
-          <blockquote>
-            <p>02<br>Где искать первых и постоянных клиентов</p>
-          </blockquote>
-          <blockquote>
-            <p>03<br>Как оформить портфолио под коммерческие задачи</p>
-          </blockquote>
-          <blockquote>
-            <p>04<br>Как работать с зарубежными заказчиками</p>
-          </blockquote>
-          <blockquote>
-            <p>05<br>Как оценивать работу и обсуждать стоимость</p>
-          </blockquote>
-          <blockquote>
-            <p>06<br>Страхи творческих профессий и как с ними бороться</p>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container about-card">
-        <div class="about-image">
-          <img src="cover1.jpg" alt="Обложка вебинара">
-        </div>
-
-        <div class="about-copy">
-          <p class="eyebrow">Стоимость и материалы</p>
-          <h2>Запись вебинара — 5 000 ₽</h2>
-          <p class="about-lead">
-            3 часа 39 минут видео и PDF-презентация более 100 страниц.
-          </p>
-          <p>
-            Доступ к записи остаётся у вас. Можно смотреть в своём темпе,
-            возвращаться к материалам и использовать их как рабочий план.
-          </p>
-
-          <div class="actions">
-            <a class="button dark" href="https://docs.google.com/forms/d/e/1FAIpQLSdtNIwjEwhyrS_S5xvC4GNTHMnZVz6UDMvT66RdPrq0_1zOiw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
-              Купить вебинар
-            </a>
+          <div class="audience-item">
+            <h3>Если сложно называть цену</h3>
+            <p>Поймёте, как говорить о стоимости, не обесценивать свою работу и вести клиента к покупке.</p>
           </div>
         </div>
       </div>
@@ -155,30 +555,74 @@ gtag('config', 'G-EKBG47SY8M');
     <section class="section reviews">
       <div class="container">
         <div class="section-label">
-          <span>Отзывы</span>
+          <span>Отзывы участников</span>
         </div>
 
-        <div class="reviews-grid">
-          <blockquote>
-            <p>«Было классно! Я ушла очень вдохновленная делать новое портфолио и искать заказы.»</p>
+        <div class="reviews-summary">
+          <blockquote class="review-card">
+            <p>«Ушла вдохновлённая делать новое портфолио и искать заказы. Столько полезной информации редко встречала.»</p>
             <footer>Jeni Iv</footer>
           </blockquote>
 
-          <blockquote>
-            <p>«Всё понятно, структурированно. Появилось больше уверенности, теперь знаю, в какую сторону идти.»</p>
+          <blockquote class="review-card">
+            <p>«Всё стало понятнее и структурированнее. Теперь знаю, в какую сторону двигаться.»</p>
             <footer>Люся</footer>
           </blockquote>
 
-          <blockquote>
-            <p>«Отличный вебинар, всё чётко и понятно, никакой воды. Множество примеров.»</p>
-            <footer>Olga</footer>
+          <blockquote class="review-card">
+            <p>«Прояснила для себя работу с заказчиком и оформление портфолио. Концентрация полезной информации зашкаливала.»</p>
+            <footer>Natalia</footer>
           </blockquote>
+        </div>
+
+        <details class="reviews-details">
+          <summary>Смотреть реальные скриншоты отзывов</summary>
+
+          <div class="review-screens-grid">
+            <img src="review-jeni.jpg" alt="Отзыв участницы Jeni Iv">
+            <img src="review-lusia.jpg" alt="Отзыв участницы Люся">
+            <img src="review-natalia.jpg" alt="Отзыв участницы Natalia">
+            <img src="review-olga.jpg" alt="Отзыв участницы Olga">
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="price-box">
+          <p class="eyebrow">Стоимость и материалы</p>
+          <h2>Запись вебинара — 5 000 ₽</h2>
+
+          <ul class="hero-benefits">
+            <li>3 часа 39 минут видео</li>
+            <li>PDF-презентация более 100 страниц</li>
+            <li>Доступ остаётся у вас</li>
+            <li>Можно смотреть в удобном темпе</li>
+            <li>Практические примеры из работы с клиентами</li>
+          </ul>
+
+          <div class="actions center-actions">
+            <a class="button dark" href="https://docs.google.com/forms/d/e/1FAIpQLSdtNIwjEwhyrS_S5xvC4GNTHMnZVz6UDMvT66RdPrq0_1zOiw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
+              Купить вебинар
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container final-grid">
+        <article class="portfolio-card">
+          <h2>Бесплатный PDF-урок</h2>
+          <p>
+            Получите PDF-урок по созданию акварельного паттерна и начните с простого практического материала.
+          </p>
+          <a class="button rose" href="https://docs.google.com/forms/d/e/1FAIpQLSfivsLEwUJN-eb4UyP88oJZa9PAojtXL4liqwIVAjbib8wV5g/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+            Получить подарок
+          </a>
+        </article>
+
         <article class="telegram-card">
           <h2>Нужен индивидуальный разбор?</h2>
           <p>
@@ -187,16 +631,6 @@ gtag('config', 'G-EKBG47SY8M');
           </p>
           <a class="button dark" href="strategy.html">
             Персональная стратегия
-          </a>
-        </article>
-
-        <article class="portfolio-card">
-          <h2>Бесплатный PDF-урок</h2>
-          <p>
-            Получите PDF-урок по созданию акварельного паттерна и начните с простого практического материала.
-          </p>
-          <a class="button rose" href="https://docs.google.com/forms/d/e/1FAIpQLSfivsLEwUJN-eb4UyP88oJZa9PAojtXL4liqwIVAjbib8wV5g/viewform?usp=header" target="_blank" rel="noopener noreferrer">
-            Получить подарок
           </a>
         </article>
       </div>
