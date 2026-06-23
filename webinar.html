@@ -245,13 +245,63 @@
       margin-top: 34px;
     }
 
+    .final-stack {
+      display: grid;
+      gap: 24px;
+    }
+
+    .strategy-feature {
+      padding: 46px;
+      border-radius: 32px;
+      background: #eaf3f4;
+      border: 1px solid rgba(90,120,140,0.14);
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .strategy-feature h2 {
+      margin-top: 0;
+    }
+
+    .strategy-feature p {
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .leadmagnet-strip {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 30px;
+      border-radius: 26px;
+      background: #f4e8e8;
+      border: 1px solid rgba(140,90,100,0.12);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .leadmagnet-strip h3 {
+      margin: 0 0 6px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 34px;
+      line-height: 1.05;
+    }
+
+    .leadmagnet-strip p {
+      margin: 0;
+    }
+
     @media (max-width: 900px) {
       .hero-grid,
       .webinar-strip,
       .audience-list,
       .pdf-gallery,
       .reviews-summary,
-      .review-screens-grid {
+      .review-screens-grid,
+      .leadmagnet-strip {
         grid-template-columns: 1fr;
       }
 
@@ -288,12 +338,18 @@
       }
 
       .price-box,
-      .pdf-intro-box {
+      .pdf-intro-box,
+      .strategy-feature {
         padding: 30px 22px;
       }
 
       .pdf-shot img {
         aspect-ratio: auto;
+      }
+
+      .leadmagnet-strip {
+        text-align: center;
+        padding: 24px 22px;
       }
     }
   </style>
@@ -440,7 +496,7 @@
 
               <article class="pdf-shot">
                 <img src="pdf-pattern-pricing.jpg" alt="Реальные бюджеты клиентов">
-                <p>Реальные бюджеты клиенто.</p>
+                <p>Реальные бюджеты клиентов.</p>
               </article>
 
               <article class="pdf-shot">
@@ -450,7 +506,7 @@
 
               <article class="pdf-shot">
                 <img src="pdf-client-red-flags.jpg" alt="Когда лучше отказаться от проекта">
-                <p>Когда лучше отказаться от проект.</p>
+                <p>Когда лучше отказаться от проекта.</p>
               </article>
             </div>
           </details>
@@ -596,7 +652,7 @@
 
           <ul class="hero-benefits">
             <li>3 часа 39 минут видео</li>
-            <li>PDF-презентация более 100 страниц</li>
+            <li>PDF-презентация на 100 страниц</li>
             <li>Доступ остаётся у вас</li>
             <li>Можно смотреть в удобном темпе</li>
             <li>Практические примеры из работы с клиентами</li>
@@ -612,18 +668,8 @@
     </section>
 
     <section class="section">
-      <div class="container final-grid">
-        <article class="portfolio-card">
-          <h2>Бесплатный PDF-урок</h2>
-          <p>
-            Получите PDF-урок по созданию акварельного паттерна и начните с простого практического материала.
-          </p>
-          <a class="button rose" href="https://docs.google.com/forms/d/e/1FAIpQLSfivsLEwUJN-eb4UyP88oJZa9PAojtXL4liqwIVAjbib8wV5g/viewform?usp=header" target="_blank" rel="noopener noreferrer">
-            Получить подарок
-          </a>
-        </article>
-
-        <article class="telegram-card">
+      <div class="container final-stack">
+        <article class="strategy-feature">
           <h2>Нужен индивидуальный разбор?</h2>
           <p>
             Если хочется не просто посмотреть вебинар, а разобрать вашу ситуацию,
@@ -631,6 +677,19 @@
           </p>
           <a class="button dark" href="strategy.html">
             Персональная стратегия
+          </a>
+        </article>
+
+        <article class="leadmagnet-strip">
+          <div>
+            <h3>Бесплатный PDF-урок</h3>
+            <p>
+              Получите PDF-урок по созданию акварельного паттерна и начните с простого практического материала.
+            </p>
+          </div>
+
+          <a class="button rose" href="https://docs.google.com/forms/d/e/1FAIpQLSfivsLEwUJN-eb4UyP88oJZa9PAojtXL4liqwIVAjbib8wV5g/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+            Получить подарок
           </a>
         </article>
       </div>
