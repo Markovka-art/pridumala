@@ -321,11 +321,24 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
   letter-spacing:.2em;
   text-transform:uppercase;
 }
+
+/* ===== УВЕЛИЧЕННЫЕ ЗАГОЛОВКИ В КАРТОЧКАХ СТАТЕЙ ===== */
 .article-card h2{
-  font-size:28px;
-  line-height:1.08;
-  margin:0 0 16px;
+  font-size:38px !important;
+  line-height:1.08 !important;
+  margin:0 0 16px !important;
 }
+
+.article-card h2 a{
+  font-size:38px !important;
+  line-height:1.08 !important;
+  color:var(--ink);
+  border-bottom:0;
+  padding-bottom:0;
+  text-transform:none;
+  letter-spacing:-.02em;
+}
+
 .article-card p{
   color:var(--muted);
   font-size:16px;
@@ -349,13 +362,6 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
   font-size:12px;
   font-weight:700;
   letter-spacing:.18em;
-}
-.article-card h2 a{
-  color:var(--ink);
-  border-bottom:0;
-  padding-bottom:0;
-  text-transform:none;
-  letter-spacing:-.02em;
 }
 .article-card h2 a:hover{color:var(--rose)}
 
@@ -403,7 +409,16 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
   .articles-grid{grid-template-columns:1fr;gap:46px;padding:44px 0 72px}
   .article-cover-label strong{font-size:23px}
   .footer-inner{display:grid;gap:10px}
+
+  /* ===== УВЕЛИЧЕННЫЕ ЗАГОЛОВКИ НА МОБИЛЬНЫХ ===== */
+  .article-card h2{
+    font-size:30px !important;
+  }
+  .article-card h2 a{
+    font-size:30px !important;
+  }
 }
+
 .strategy-price-card .small-note {
     font-size: 15px;
     color: #7d7a74;
@@ -469,64 +484,8 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
   .header-link {
     display: none;
   }
-}.nav-toggle {
-  display: none;
 }
 
-.burger {
-  display: none;
-}
-
-@media (max-width: 760px) {
-  .site-header {
-    position: relative;
-  }
-
-  .burger {
-    display: flex;
-    width: 34px;
-    height: 28px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px;
-    margin-left: auto;
-  }
-
-  .burger span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: var(--ink);
-    border-radius: 999px;
-  }
-
-  .site-header .nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 16px;
-    right: 16px;
-    background: var(--paper);
-    border-radius: 22px;
-    padding: 18px;
-    box-shadow: var(--shadow);
-    z-index: 50;
-  }
-
-  .site-header .nav a {
-    display: block;
-    padding: 12px 4px;
-  }
-
-  .nav-toggle:checked ~ .nav {
-    display: block;
-  }
-
-  .header-link {
-    display: none;
-  }
-}
 .article-text {
   max-width: 760px;
 }
@@ -546,7 +505,9 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
   color: #666;
   margin-top: 10px;
   text-align: center;
-}.articles-hero .article-text {
+}
+
+.articles-hero .article-text {
   max-width: 760px;
 }
 
@@ -560,7 +521,9 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
   max-width: 100%;
   border-radius: 24px;
   display: block;
-}.article-image {
+}
+
+.article-image {
   max-width: 760px;
   margin: 52px 0;
 }
@@ -581,7 +544,9 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
 
 .article-text p {
   margin-bottom: 28px;
-}.hero-grid {
+}
+
+.hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
   gap: 48px;
@@ -644,7 +609,9 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
     width: 100%;
     justify-content: center;
   }
-}.hero-benefits{
+}
+
+.hero-benefits{
   list-style:none;
   padding:0;
   margin:30px 0;
@@ -664,7 +631,9 @@ blockquote footer{margin-top:22px;color:var(--rose);font-size:13px;font-weight:8
   left:0;
   color:#5b84a8;
   font-weight:700;
-}.article-related {
+}
+
+.article-related {
   max-width: 760px;
   margin: 0 auto 48px;
   padding-bottom: 32px;
