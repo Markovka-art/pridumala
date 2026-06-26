@@ -697,10 +697,33 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
+  <div class="container">
+
+    <!-- ССЫЛКА "НАВЕРХ" — ПРОСТО ТЕКСТ -->
+    <div class="footer-top">
+      <a href="#" class="back-to-top" aria-label="Наверх">Наверх</a>
+    </div>
+
+    <!-- КОПИРАЙТ -->
+    <div class="footer-bottom">
       <span>© 2026 Ирина Марковка</span>
       <a href="https://markovka.art" target="_blank" rel="noopener noreferrer">Markovka.art</a>
     </div>
-  </footer>
+
+  </div>
+</footer>
+
+<!-- ПЛАВНАЯ ПРОКРУТКА -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const backToTop = document.querySelector('.back-to-top');
+  if (backToTop) {
+    backToTop.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+});
+</script>
 </body>
 </html>
