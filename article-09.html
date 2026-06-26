@@ -7,6 +7,15 @@
 <title>Как писать оферы на Upwork, чтобы клиенты отвечали — Ирина Марковка</title>
 <meta name="description" content="Как фрилансеру писать сопроводительные письма на Upwork, чтобы клиенты отвечали. Конкретные приёмы, примеры и разбор ошибок.">
 <link rel="stylesheet" href="style.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EKBG47SY8M"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-EKBG47SY8M');
+</script>
 </head>
 
 <body>
@@ -161,45 +170,12 @@
 </p>
 
 <p>
-<a class="text-link" href="https://pridumala.ru/webinar.html">→ Подробнее о вебинаре по монетизации иллюстраций</a>
+<strong>А если вы только начинаете на Upwork и хотите понять, с чего вообще начать, — читайте мою <a class="text-link" href="article-01.html">статью о первом клиенте</a>.</strong>
 </p>
-
-</div>
-
-</div>
-</section>
-
-<!-- БЛОК "ЧИТАЙТЕ ТАКЖЕ" — 2 СВЯЗАННЫЕ СТАТЬИ -->
-<section class="section">
-<div class="container">
-
-<h2 style="margin-bottom:40px;">Читайте также</h2>
-
-<div class="article-related">
-
-<h2>
-  <a href="article-01.html">Как я получила первого клиента на Upwork</a>
-</h2>
 
 <p>
-Моя история первых откликов, коннектов, ожидания ответа и первой ошибки с низким бюджетом.
+<strong>А если вы ещё не определились, какой канал для вас основной, — вот <a class="text-link" href="article-05.html">статья о выборе между стоками, Upwork и прямыми заказчиками</a>.</strong>
 </p>
-
-<a class="text-link" href="article-01.html">Читать статью →</a>
-
-</div>
-
-<div class="article-related">
-
-<h2>
-  <a href="article-06.html">Почему мы так боимся, когда оценивают наши творческие проекты</a>
-</h2>
-
-<p>
-Как перестать путать страх с энергией и понять, кто внутри нами рулит.
-</p>
-
-<a class="text-link" href="article-06.html">Читать статью →</a>
 
 </div>
 
@@ -275,7 +251,7 @@ target="_blank">
 </div>
 </section>
 
-<!-- КОМПАКТНЫЙ СПИСОК ВСЕХ СТАТЕЙ -->
+<!-- ДРУГИЕ СТАТЬИ (СПИСОК С ГАЛОЧКАМИ) -->
 <section class="section">
 <div class="container">
 
@@ -301,11 +277,34 @@ target="_blank">
 </main>
 
 <footer class="footer">
-<div class="container footer-inner">
-<span>© 2026 Ирина Марковка</span>
-<a href="https://markovka.art" target="_blank">Markovka.art</a>
-</div>
+  <div class="container">
+
+    <!-- ССЫЛКА "НАВЕРХ" — ПРОСТО ТЕКСТ -->
+    <div class="footer-top">
+      <a href="#" class="back-to-top" aria-label="Наверх">Наверх</a>
+    </div>
+
+    <!-- КОПИРАЙТ -->
+    <div class="footer-bottom">
+      <span>© 2026 Ирина Марковка</span>
+      <a href="https://markovka.art" target="_blank" rel="noopener noreferrer">Markovka.art</a>
+    </div>
+
+  </div>
 </footer>
+
+<!-- ПЛАВНАЯ ПРОКРУТКА -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const backToTop = document.querySelector('.back-to-top');
+  if (backToTop) {
+    backToTop.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+});
+</script>
 
 </body>
 </html>
