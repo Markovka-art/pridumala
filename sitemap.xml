@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://pridumala.ru/</loc></url>
-  <url><loc>https://pridumala.ru/webinar.html</loc></url>
-  <url><loc>https://pridumala.ru/strategy.html</loc></url>
-  <url><loc>https://pridumala.ru/articles.html</loc></url>
+
+  <url>
+    <loc>https://pridumala.ru/</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/webinar.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/strategy.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/articles.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/article-01.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/article-02.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/article-03.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/article-04.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/article-05.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/article-06.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/article-07.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/article-08.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pridumala.ru/article-09.html</loc>
+  </url>
+
 </urlset>
