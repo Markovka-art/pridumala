@@ -21,106 +21,99 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-EKBG47SY8M');
   </script>
 
   <style>
     /* ===== КОМПАКТНЫЙ ГЕРОЙ ===== */
+    .hero {
+      padding: 20px 0 10px !important;
+    }
     .hero-card {
-      padding: 44px 52px 40px !important;
+      display: grid !important;
+      grid-template-columns: 1fr 0.8fr !important;
+      gap: 30px !important;
+      align-items: center !important;
+      padding: 24px 28px 24px !important;
+      background: var(--paper) !important;
+      border-radius: 42px !important;
+      box-shadow: var(--shadow) !important;
+    }
+    .hero-copy .eyebrow {
+      margin-bottom: 8px !important;
     }
     .hero-copy .lead {
-      font-size: 18px;
-      margin-top: 18px;
-      max-width: 480px;
-    }
-    .hero-copy .body-text {
-      display: none;
+      font-size: 17px !important;
+      margin-top: 4px !important;
+      margin-bottom: 0 !important;
+      max-width: 100% !important;
     }
     .hero-copy .actions {
-      margin-top: 20px;
+      margin-top: 12px !important;
+      gap: 12px !important;
     }
     .hero-image {
-      min-height: 440px !important;
+      min-height: auto !important;
+      max-width: 100% !important;
     }
     .hero-image img {
-      min-height: 440px !important;
-    }
-
-    /* ===== БЛОК "ОБО МНЕ" ===== */
-    .about-card-compact {
-      display: flex;
-      gap: 44px;
-      align-items: center;
-    }
-    .about-card-compact .about-image {
-      max-width: 32%;
-      flex-shrink: 0;
-    }
-    .about-card-compact .about-image img {
-      width: 100%;
+      min-height: auto !important;
       aspect-ratio: 1/1.2;
       object-fit: cover;
       border-radius: 24px;
-    }
-    .about-card-compact .about-copy {
-      flex: 1;
+      width: 100%;
     }
 
     @media (max-width: 1020px) {
       .hero-card {
-        padding: 32px 28px !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 20px 20px 20px !important;
       }
       .hero-image {
-        min-height: 300px !important;
-      }
-      .hero-image img {
-        min-height: 300px !important;
-      }
-    }
-
-    @media (max-width: 820px) {
-      .about-card-compact {
-        flex-direction: column;
-        gap: 28px;
-      }
-      .about-card-compact .about-image {
-        max-width: 60%;
-      }
-      .about-card-compact .about-copy ul {
-        grid-template-columns: 1fr;
+        max-width: 55% !important;
+        margin: 0 auto;
       }
     }
 
     @media (max-width: 640px) {
+      .hero {
+        padding: 10px 0 8px !important;
+      }
       .hero-card {
-        padding: 18px 16px 24px !important;
-        border-radius: 24px !important;
+        padding: 14px 12px 16px !important;
+        border-radius: 20px !important;
+        gap: 12px !important;
       }
-      .hero-copy .lead {
-        font-size: 16px;
-        margin-top: 12px;
-      }
-      .hero-copy .actions {
-        margin-top: 14px;
-        gap: 10px;
-      }
-      .hero-copy .actions .button {
-        font-size: 11px;
-        min-height: 42px;
-        padding: 0 18px;
+      .hero-copy {
+        order: 2;
       }
       .hero-image {
-        min-height: 180px !important;
+        order: 1;
+        max-width: 65% !important;
+        margin: 0 auto;
       }
-      .hero-image img {
-        min-height: 180px !important;
-        aspect-ratio: 4/3;
-        object-position: 52% 50%;
+      .hero-copy .eyebrow {
+        font-size: 10px !important;
+        margin-bottom: 4px !important;
+      }
+      .hero-copy .lead {
+        font-size: 14px !important;
+        margin-top: 4px !important;
+      }
+      .hero-copy .actions {
+        margin-top: 8px !important;
+        gap: 6px !important;
+      }
+      .hero-copy .actions .button {
+        font-size: 10px !important;
+        min-height: 34px !important;
+        padding: 0 12px !important;
+        width: 100% !important;
+        justify-content: center !important;
       }
       h1 {
-        font-size: 36px !important;
+        font-size: 28px !important;
       }
     }
   </style>
@@ -173,7 +166,7 @@
     <section class="features" aria-label="Ключевые материалы">
       <div class="container feature-card clean-features">
         <div class="feature-item"><span>3 часа 39 минут</span><small>видео</small></div>
-        <div class="feature-item"><span>PDF более 100 страниц</span><small>материалы</small></div>
+        <div class="feature-item"><span>PDF 100 страниц</span><small>материалы</small></div>
         <div class="feature-item"><span>Поиск клиентов</span><small>площадки и подача</small></div>
         <div class="feature-item"><span>Портфолио</span><small>структура работ</small></div>
         <div class="feature-item"><span>Цены</span><small>расчёт и продажи</small></div>
@@ -190,7 +183,7 @@
             <p class="card-eyebrow">Вебинар</p>
             <h2>Как зарабатывать на иллюстрации и паттернах</h2>
             <p class="product-price">5 000 ₽</p>
-            <p class="product-text">Запись 3 часа 39 минут и PDF-презентация более 100 страниц. Пошаговая система: от портфолио и поиска клиентов до стабильного дохода на творческих навыках.</p>
+            <p class="product-text">Запись 3 часа 39 минут и PDF-презентация 100 страниц. Пошаговая система: от портфолио и поиска клиентов до стабильного дохода на творческих навыках.</p>
 
             <ul class="columns-list">
               <li>Стратегия и позиционирование</li>
@@ -250,7 +243,6 @@
       </div>
     </section>
 
-    <!-- ===== БЛОК "ОБО МНЕ" ===== -->
     <section class="section about" id="about">
       <div class="container about-card-compact">
         <div class="about-image">
@@ -258,42 +250,42 @@
         </div>
         <div class="about-copy">
           <p class="eyebrow">Обо мне</p>
-          <h2 style="font-size: 2.4rem; margin-bottom: 4px;">Ирина Марковка</h2>
-          <p style="font-size: 15px; color: var(--blue-light); margin-bottom: 18px;">Иллюстратор · Паттерн-дизайнер</p>
+          <h2 style="font-size: 2.2rem; margin-bottom: 2px;">Ирина Марковка</h2>
+          <p style="font-size: 14px; color: var(--blue-light); margin-bottom: 14px;">Иллюстратор · Паттерн-дизайнер</p>
 
-          <p style="font-size: 16px; line-height: 1.7; max-width: 100%; margin-bottom: 10px;">
+          <p style="font-size: 15px; line-height: 1.6; max-width: 100%; margin-bottom: 6px;">
             Меня зовут Ирина Марковка. Более 17 лет я создаю паттерны и иллюстрации для международных брендов.
           </p>
-          <p style="font-size: 16px; line-height: 1.7; max-width: 100%; margin-bottom: 10px;">
+          <p style="font-size: 15px; line-height: 1.6; max-width: 100%; margin-bottom: 6px;">
             Мои работы украшают упаковку, текстиль, домашний декор — и даже появлялись в трансляциях Олимпийских игр.
           </p>
-          <p style="font-size: 16px; line-height: 1.7; max-width: 100%; margin-bottom: 16px;">
+          <p style="font-size: 15px; line-height: 1.6; max-width: 100%; margin-bottom: 12px;">
             Сегодня я действующий коммерческий иллюстратор. А ещё я помогаю дизайнерам и иллюстраторам выходить на тот же уровень: находить клиентов, строить портфолио и зарабатывать творчеством стабильно.
           </p>
 
-          <div style="display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 16px 0 18px; font-size: 14px; color: var(--muted);">
-            <span><strong style="color: var(--blue); font-size: 1.1rem;">17+ лет</strong> в дизайне</span>
-            <span><strong style="color: var(--blue); font-size: 1.1rem;">150+</strong> проектов</span>
-            <span><strong style="color: var(--blue); font-size: 1.1rem;">1M+</strong> лицензий на иллюстрации</span>
-            <span><strong style="color: var(--blue); font-size: 1.1rem;">Top 1%</strong> Upwork</span>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 10px 0 14px; font-size: 13px; color: var(--muted);">
+            <span><strong style="color: var(--blue); font-size: 1rem;">17+ лет</strong> в дизайне</span>
+            <span><strong style="color: var(--blue); font-size: 1rem;">150+</strong> проектов</span>
+            <span><strong style="color: var(--blue); font-size: 1rem;">1M+</strong> лицензий на иллюстрации</span>
+            <span><strong style="color: var(--blue); font-size: 1rem;">Top 1%</strong> Upwork</span>
           </div>
 
-          <div style="border-top: 1px solid var(--line); padding-top: 16px;">
-            <p style="font-size: 12px; font-weight: 700; color: var(--blue-light); letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 10px;">Ключевые достижения</p>
-            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; font-size: 15px; line-height: 1.7;">
-              <li style="position: relative; padding-left: 22px;">
+          <div style="border-top: 1px solid var(--line); padding-top: 12px;">
+            <p style="font-size: 11px; font-weight: 700; color: var(--blue-light); letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 8px;">Ключевые достижения</p>
+            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 3px 20px; font-size: 14px; line-height: 1.6;">
+              <li style="position: relative; padding-left: 20px;">
                 <span style="position: absolute; left: 0; color: var(--rose); font-weight: 700;">✓</span>
                 Автор книги паттернов в Болонье (Италия)
               </li>
-              <li style="position: relative; padding-left: 22px;">
+              <li style="position: relative; padding-left: 20px;">
                 <span style="position: absolute; left: 0; color: var(--rose); font-weight: 700;">✓</span>
                 Клиенты: Crayola, Target, ICE International и другие
               </li>
-              <li style="position: relative; padding-left: 22px;">
+              <li style="position: relative; padding-left: 20px;">
                 <span style="position: absolute; left: 0; color: var(--rose); font-weight: 700;">✓</span>
                 Паттерны на Олимпийских играх
               </li>
-              <li style="position: relative; padding-left: 22px;">
+              <li style="position: relative; padding-left: 20px;">
                 <span style="position: absolute; left: 0; color: var(--rose); font-weight: 700;">✓</span>
                 150+ клиентов по всему миру
               </li>
