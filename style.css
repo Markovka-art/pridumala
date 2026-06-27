@@ -970,4 +970,40 @@ blockquote footer {
   max-width: 640px;
   margin-top: 32px;
   margin-bottom: 28px;
+}.strategy-hero {
+  padding: 60px 0 40px;
+}
+.strategy-hero h1 {
+  max-width: 760px;
+  margin-bottom: 8px;
+}
+.strategy-hero .lead {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 580px;
+  margin-top: 12px;
+}
+.strategy-hero .actions {
+  margin-top: 18px;
+}
+
+@media (max-width: 640px) {
+  .strategy-hero {
+    padding: 40px 0 24px;
+  }
+  .strategy-hero h1 {
+    font-size: 32px;
+  }
+  .strategy-hero .lead {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .strategy-hero .actions {
+    margin-top: 12px;
+  }
+  .strategy-hero .actions .button {
+    width: 100%;
+    justify-content: center;
+  }
 }
