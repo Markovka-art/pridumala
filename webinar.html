@@ -294,6 +294,26 @@
       margin: 0;
     }
 
+    /* Стили для блока "Обо мне" */
+    .about-card-compact {
+      display: flex;
+      gap: 44px;
+      align-items: center;
+    }
+    .about-card-compact .about-image {
+      max-width: 32%;
+      flex-shrink: 0;
+    }
+    .about-card-compact .about-image img {
+      width: 100%;
+      aspect-ratio: 1/1.2;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+    .about-card-compact .about-copy {
+      flex: 1;
+    }
+
     @media (max-width: 900px) {
       .hero-grid,
       .webinar-strip,
@@ -351,6 +371,17 @@
         text-align: center;
         padding: 24px 22px;
       }
+
+      .about-card-compact {
+        flex-direction: column;
+        gap: 28px;
+      }
+      .about-card-compact .about-image {
+        max-width: 60%;
+      }
+      .about-card-compact .about-copy ul {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 
@@ -382,7 +413,6 @@
       <a href="webinar.html">Вебинар</a>
       <a href="strategy.html">Персональная стратегия</a>
       <a href="articles.html">Статьи</a>
-     
       <a href="index.html#about">Обо мне</a>
     </nav>
 
@@ -667,8 +697,8 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container final-stack">
+    <section class="section final-stack">
+      <div class="container">
         <article class="strategy-feature">
           <h2>Нужен индивидуальный разбор?</h2>
           <p>
@@ -694,36 +724,83 @@
         </article>
       </div>
     </section>
+
+    <!-- ===== БЛОК "ОБО МНЕ" ===== -->
+    <section class="section about" id="about">
+      <div class="container about-card-compact">
+        <div class="about-image">
+          <img src="about-irina.jpg" alt="Ирина Марковка">
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">Обо мне</p>
+          <h2 style="font-size: 2.4rem; margin-bottom: 4px;">Ирина Марковка</h2>
+          <p style="font-size: 15px; color: var(--blue-light); margin-bottom: 18px;">Иллюстратор · Паттерн-дизайнер</p>
+
+          <p style="font-size: 16px; line-height: 1.7; max-width: 100%; margin-bottom: 10px;">
+            Меня зовут Ирина Марковка. Более 17 лет я создаю паттерны и иллюстрации для международных брендов.
+          </p>
+          <p style="font-size: 16px; line-height: 1.7; max-width: 100%; margin-bottom: 10px;">
+            Мои работы украшают упаковку, текстиль, домашний декор — и даже появлялись в трансляциях Олимпийских игр.
+          </p>
+          <p style="font-size: 16px; line-height: 1.7; max-width: 100%; margin-bottom: 16px;">
+            Сегодня я действующий коммерческий иллюстратор. А ещё я помогаю дизайнерам и иллюстраторам выходить на тот же уровень: находить клиентов, строить портфолио и зарабатывать творчеством стабильно.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 16px 0 18px; font-size: 14px; color: var(--muted);">
+            <span><strong style="color: var(--blue); font-size: 1.1rem;">17+ лет</strong> в дизайне</span>
+            <span><strong style="color: var(--blue); font-size: 1.1rem;">150+</strong> проектов</span>
+            <span><strong style="color: var(--blue); font-size: 1.1rem;">1M+</strong> лицензий на иллюстрации</span>
+            <span><strong style="color: var(--blue); font-size: 1.1rem;">Top 1%</strong> Upwork</span>
+          </div>
+
+          <div style="border-top: 1px solid var(--line); padding-top: 16px;">
+            <p style="font-size: 12px; font-weight: 700; color: var(--blue-light); letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 10px;">Ключевые достижения</p>
+            <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; font-size: 15px; line-height: 1.7;">
+              <li style="position: relative; padding-left: 22px;">
+                <span style="position: absolute; left: 0; color: var(--rose); font-weight: 700;">✓</span>
+                Автор книги паттернов в Болонье (Италия)
+              </li>
+              <li style="position: relative; padding-left: 22px;">
+                <span style="position: absolute; left: 0; color: var(--rose); font-weight: 700;">✓</span>
+                Клиенты: Crayola, Target, ICE International и другие
+              </li>
+              <li style="position: relative; padding-left: 22px;">
+                <span style="position: absolute; left: 0; color: var(--rose); font-weight: 700;">✓</span>
+                Паттерны на Олимпийских играх
+              </li>
+              <li style="position: relative; padding-left: 22px;">
+                <span style="position: absolute; left: 0; color: var(--rose); font-weight: 700;">✓</span>
+                150+ клиентов по всему миру
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-  <div class="container">
-
-    <!-- ССЫЛКА "НАВЕРХ" — ПРОСТО ТЕКСТ -->
-    <div class="footer-top">
-      <a href="#" class="back-to-top" aria-label="Наверх">Наверх</a>
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="back-to-top" aria-label="Наверх">Наверх</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ирина Марковка</span>
+        <a href="https://markovka.art" target="_blank" rel="noopener noreferrer">Markovka.art</a>
+      </div>
     </div>
+  </footer>
 
-    <!-- КОПИРАЙТ -->
-    <div class="footer-bottom">
-      <span>© 2026 Ирина Марковка</span>
-      <a href="https://markovka.art" target="_blank" rel="noopener noreferrer">Markovka.art</a>
-    </div>
-
-  </div>
-</footer>
-
-<!-- ПЛАВНАЯ ПРОКРУТКА -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const backToTop = document.querySelector('.back-to-top');
-  if (backToTop) {
-    backToTop.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const backToTop = document.querySelector('.back-to-top');
+      if (backToTop) {
+        backToTop.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
     });
-  }
-});
-</script>
+  </script>
 </body>
 </html>
