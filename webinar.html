@@ -7,7 +7,7 @@
   <title>Вебинар — Как зарабатывать на иллюстрации и паттернах</title>
   <meta name="description" content="Практический вебинар для дизайнеров, иллюстраторов и авторов паттернов: портфолио, клиенты, Upwork, цены и продажи творческих услуг.">
   <meta property="og:title" content="Как зарабатывать на иллюстрации и паттернах">
-  <meta property="og:description" content="Запись вебинара 3 часа 39 минут и PDF более 100 страниц.">
+  <meta property="og:description" content="Запись вебинара 3 часа 39 минут и PDF 100 страниц.">
   <meta property="og:image" content="webinar-cover2.png">
   <meta property="og:type" content="website">
 
@@ -35,15 +35,15 @@
     .hero-benefits {
       list-style: none;
       padding: 0;
-      margin: 30px 0;
+      margin: 14px 0 0;
     }
 
     .hero-benefits li {
       position: relative;
-      padding-left: 28px;
-      margin-bottom: 14px;
-      font-size: 18px;
-      line-height: 1.5;
+      padding-left: 26px;
+      margin-bottom: 6px;
+      font-size: 16px;
+      line-height: 1.4;
     }
 
     .hero-benefits li:before {
@@ -55,9 +55,9 @@
     }
 
     .hero-price {
-      margin: 22px 0 8px;
+      margin: 12px 0 6px;
       font-family: "Cormorant Garamond", serif;
-      font-size: clamp(42px, 6vw, 68px);
+      font-size: clamp(36px, 5vw, 58px);
       line-height: 1;
       color: #527d9e;
     }
@@ -294,7 +294,6 @@
       margin: 0;
     }
 
-    /* Стили для блока "Обо мне" */
     .about-card-compact {
       display: flex;
       gap: 44px;
@@ -383,6 +382,27 @@
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 640px) {
+      .hero-benefits li {
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+      .hero-benefits {
+        margin: 10px 0 0;
+      }
+      .hero-price {
+        font-size: 30px;
+        margin: 8px 0 4px;
+      }
+      .actions .button {
+        font-size: 11px;
+        min-height: 38px;
+        padding: 0 16px;
+        width: 100%;
+        justify-content: center;
+      }
+    }
   </style>
 
   <!-- Google Analytics -->
@@ -420,10 +440,11 @@
   </header>
 
   <main>
+    <!-- ===== ГЕРОЙ ===== -->
     <section class="articles-hero webinar-hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">3 часа 39 минут • PDF 100+ страниц • Практические кейсы</p>
+          <p class="eyebrow">3 часа 39 минут • PDF 100 страниц • Практические кейсы</p>
 
           <h1>Как зарабатывать на иллюстрации и паттернах</h1>
 
@@ -431,7 +452,6 @@
             <li>Портфолио, которое помогает получать заказы</li>
             <li>Где искать клиентов в России и за рубежом</li>
             <li>Upwork и работа с зарубежными заказчиками</li>
-            <li>Как назначать цены и продавать творческие услуги</li>
           </ul>
 
           <div class="hero-price">5 000 ₽</div>
@@ -452,6 +472,7 @@
       </div>
     </section>
 
+    <!-- ===== ОСТАЛЬНЫЕ СЕКЦИИ (без изменений) ===== -->
     <section class="section">
       <div class="container">
         <div class="section-label">
@@ -682,7 +703,7 @@
 
           <ul class="hero-benefits">
             <li>3 часа 39 минут видео</li>
-            <li>PDF-презентация на 100 страниц</li>
+            <li>PDF-презентация 100 страниц</li>
             <li>Доступ остаётся у вас</li>
             <li>Можно смотреть в удобном темпе</li>
             <li>Практические примеры из работы с клиентами</li>
@@ -785,22 +806,4 @@
         <a href="#" class="back-to-top" aria-label="Наверх">Наверх</a>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Ирина Марковка</span>
-        <a href="https://markovka.art" target="_blank" rel="noopener noreferrer">Markovka.art</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const backToTop = document.querySelector('.back-to-top');
-      if (backToTop) {
-        backToTop.addEventListener('click', function(e) {
-          e.preventDefault();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-      }
-    });
-  </script>
-</body>
-</html>
+        <span>© 2026 Ирина Мар
