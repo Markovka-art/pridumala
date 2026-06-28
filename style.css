@@ -1021,3 +1021,213 @@ blockquote footer {
     justify-content: center;
   }
 }
+/* ===== ФУТЕР С КОНТАКТАМИ ===== */
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ССЫЛКА "НАВЕРХ" */
+.footer-top {
+  display: flex;
+  justify-content: center;
+}
+.back-to-top {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+.back-to-top:hover {
+  color: var(--blue);
+}
+
+/* КОНТАКТЫ */
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px 32px;
+  flex-wrap: wrap;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+.contact-link:hover {
+  color: var(--rose);
+}
+/* Иконка-символ (почта) */
+.contact-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+/* PNG-иконки */
+.contact-icon-img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: filter 0.25s ease;
+}
+.contact-link:hover .contact-icon-img {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(53%) saturate(497%) hue-rotate(328deg) brightness(92%) contrast(87%);
+}
+
+/* КОПИРАЙТ */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+.footer-bottom a {
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--blue);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.footer-bottom a:hover {
+  color: var(--rose);
+}
+
+/* МОБИЛЬНЫЕ */
+@media (max-width: 640px) {
+  .footer-contacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 0;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
+/* ===== ФУТЕР ===== */
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 30px 0 24px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* ССЫЛКА "НАВЕРХ" */
+.footer-top {
+  display: flex;
+  justify-content: center;
+}
+.back-to-top {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.back-to-top:hover {
+  color: var(--blue);
+}
+
+/* ПОЧТА */
+.footer-email {
+  font-size: 14px;
+}
+.footer-email a {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+.footer-email a:hover {
+  color: var(--rose);
+}
+
+/* ИКОНКИ СОЦСЕТЕЙ */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-icons a {
+  display: inline-block;
+  line-height: 0;
+  transition: opacity 0.25s ease;
+}
+.footer-icons a:hover {
+  opacity: 0.7;
+}
+.footer-icons img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* КОПИРАЙТ */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--muted);
+}
+.footer-bottom a {
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--blue);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+.footer-bottom a:hover {
+  color: var(--rose);
+}
+
+/* МОБИЛЬНЫЕ */
+@media (max-width: 640px) {
+  .footer .container {
+    gap: 12px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+  .footer-icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
