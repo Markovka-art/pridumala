@@ -133,9 +133,14 @@ h2 {
   margin: 4px 0 0;
   max-width: 100%;
 }
+
+/* ===== ИСПРАВЛЕНО: .body-text теперь видимый ===== */
 .body-text {
-  display: none;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
 }
+
 .keywords {
   display: none;
 }
@@ -970,7 +975,9 @@ blockquote footer {
   max-width: 640px;
   margin-top: 32px;
   margin-bottom: 28px;
-}.strategy-hero {
+}
+
+.strategy-hero {
   padding: 60px 0 40px;
 }
 .strategy-hero h1 {
@@ -986,6 +993,13 @@ blockquote footer {
 }
 .strategy-hero .actions {
   margin-top: 18px;
+}
+
+/* ===== СТИЛИ ДЛЯ БЛОКА ФОРМАТ ===== */
+.tinted-blue .body-text {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 @media (max-width: 640px) {
