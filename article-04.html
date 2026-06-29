@@ -16,6 +16,127 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-EKBG47SY8M');
 </script>
+
+<style>
+/* ===== КОМПАКТНЫЙ ЛИД-МАГНИТ: АУДИТ ПОРТФОЛИО ===== */
+.leadmagnet-box {
+  background: var(--paper);
+  border-radius: 24px;
+  padding: 28px 32px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.leadmagnet-badge {
+  display: inline-block;
+  background: var(--rose-soft);
+  color: var(--rose);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.leadmagnet-content h2 {
+  font-size: 1.4rem;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+
+.leadmagnet-content .leadmagnet-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.leadmagnet-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px 16px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.leadmagnet-benefits span {
+  position: relative;
+  padding-left: 18px;
+}
+
+.leadmagnet-benefits span::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--rose);
+  font-weight: 700;
+}
+
+.leadmagnet-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.leadmagnet-input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.leadmagnet-input:focus {
+  border-color: var(--blue);
+}
+
+.leadmagnet-input::placeholder {
+  color: var(--muted);
+}
+
+.leadmagnet-row .button {
+  flex-shrink: 0;
+  min-height: 42px;
+  padding: 0 22px;
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .leadmagnet-box {
+    padding: 20px 16px;
+    border-radius: 18px;
+  }
+  .leadmagnet-content h2 {
+    font-size: 1.2rem;
+  }
+  .leadmagnet-benefits {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .leadmagnet-row {
+    flex-direction: column;
+  }
+  .leadmagnet-input {
+    min-width: auto;
+  }
+  .leadmagnet-row .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+</style>
+
 </head>
 
 <body>
@@ -33,12 +154,12 @@ gtag('config', 'G-EKBG47SY8M');
   </label>
 
   <nav class="nav" aria-label="Навигация">
-  <a href="index.html">Главная</a>
-  <a href="webinar.html">Вебинар</a>
-  <a href="strategy.html">Стратегия</a>
-  <a href="articles.html">Пишу</a>
-  <a href="index.html#about">Обо мне</a>
-</nav>
+    <a href="index.html">Главная</a>
+    <a href="webinar.html">Вебинар</a>
+    <a href="strategy.html">Стратегия</a>
+    <a href="articles.html">Пишу</a>
+    <a href="index.html#about">Обо мне</a>
+  </nav>
 
   <a class="header-link" href="https://docs.google.com/forms/d/1lf9KseqGWi2FmkiFGvXtNCnMNeQKkgYbypA-zxr-Fec/viewform" target="_blank" rel="noopener noreferrer">Оставить заявку</a>
 </header>
@@ -344,29 +465,51 @@ gtag('config', 'G-EKBG47SY8M');
 </div>
 </section>
 
-<!-- БЕСПЛАТНЫЙ УРОК -->
-<section class="section">
-<div class="container">
+<!-- ===== ЛИД-МАГНИТ: АУДИТ ПОРТФОЛИО ===== -->
+<section class="section leadmagnet-audit" style="padding: 16px 0 8px;">
+  <div class="container">
+    <div class="leadmagnet-box">
 
-<div class="telegram-card">
+      <div class="leadmagnet-content">
+        <span class="leadmagnet-badge">🔍 Бесплатный аудит</span>
 
-<h2>Бесплатный урок по созданию паттерна</h2>
+        <h2>27 вопросов, чтобы увидеть портфолио глазами клиента</h2>
 
-<p>
-Получите мой PDF-урок по созданию акварельного паттерна.
-</p>
+        <p class="leadmagnet-desc">
+          Ответьте на вопросы и поймёте, что работает, а что стоит изменить. Это не автоматический разбор, а возможность честно посмотреть на свои работы со стороны.
+        </p>
 
-<a
-class="button dark"
-href="https://docs.google.com/forms/d/e/1FAIpQLSfivsLEwUJN-eb4UyP88oJZa9PAojtXL4liqwIVAjbib8wV5g/viewform?usp=header"
-target="_blank">
-Получить подарок
-</a>
+        <div class="leadmagnet-benefits">
+          <span>Какие работы убрать, а какие оставить</span>
+          <span>Направление для развития</span>
+          <span>Нужна ли глубокая стратегия</span>
+        </div>
 
-</div>
+        <div class="leadmagnet-row">
+          <input type="email" placeholder="Ваш email" class="leadmagnet-input" id="audit-email">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSescdAHPvCDqmgsbqiRSglJpxGMZxLRo2Tk8kooi-KFo9fPyQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="button dark" onclick="return saveEmail();">
+            Начать аудит →
+          </a>
+        </div>
 
-</div>
+      </div>
+
+    </div>
+  </div>
 </section>
+
+<script>
+function saveEmail() {
+  var email = document.getElementById('audit-email').value;
+  if (email && email.includes('@')) {
+    localStorage.setItem('audit_email', email);
+    return true;
+  } else {
+    alert('Пожалуйста, введите корректный email');
+    return false;
+  }
+}
+</script>
 
 <!-- ФИНАЛЬНЫЙ БЛОК С ВЕБИНАРОМ И СТРАТЕГИЕЙ -->
 <section class="section">
@@ -441,9 +584,24 @@ target="_blank">
 <footer class="footer">
   <div class="container">
 
-    <!-- ССЫЛКА "НАВЕРХ" — ПРОСТО ТЕКСТ -->
+    <!-- ССЫЛКА "НАВЕРХ" -->
     <div class="footer-top">
-      <a href="#" class="back-to-top" aria-label="Наверх">Наверх</a>
+      <a href="#" class="back-to-top" aria-label="Наверх">↑ Наверх</a>
+    </div>
+
+    <!-- ПОЧТА -->
+    <div class="footer-email">
+      <a href="mailto:ira@pridumala.ru">✉ ira@pridumala.ru</a>
+    </div>
+
+    <!-- ИКОНКИ СОЦСЕТЕЙ -->
+    <div class="footer-icons">
+      <a href="https://t.me/markovka_pattern" target="_blank" rel="noopener noreferrer">
+        <img src="icon-tg.png" alt="Telegram" width="28" height="28">
+      </a>
+      <a href="https://vk.com/markovka" target="_blank" rel="noopener noreferrer">
+        <img src="icon-vk.png" alt="VK" width="28" height="28">
+      </a>
     </div>
 
     <!-- КОПИРАЙТ -->
