@@ -1230,4 +1230,16 @@ blockquote footer {
     width: 24px;
     height: 24px;
   }
+}.article-text code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.92em;
+  background: #f1ece4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #3c5561;
+}.article-cover {
+  position: relative;   /* ← это есть */
+  width: 100%;
+  aspect-ratio: 1.52 / 1;
+  ...
 }
